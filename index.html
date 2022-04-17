@@ -1,0 +1,2136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<!--<script type="text/javascript" src="/_media/js/website/classes/TagManager.cls.js"></script>-->
+<script type="text/javascript">
+    var user_connected = 0;
+
+    <!-- Google Tag Manager -->
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TBJRXQ');
+    <!-- End Google Tag Manager -->
+
+    dataLayer = [];
+</script>
+<title>מקדונלד'ס הזמנות | אתר משלוחים - מקדונלד'ס ישראל</title>
+<meta name="description" content="אתר ההזמנות הרשמי של רשת מקדונלד`ס בישראל. חסכו זמן יקר, בחרו מסעדה קרובה והזמינו ארוחה טעימה עכשיו, בקלות ובמהירות."/>
+<meta name="keywords" content=""/>
+<meta name="csrf-token" content="UtrGDOpgS7nTJAp3MAe9Ol6pVJpSLZRmfilZMoOSIobogapldtB4PW4GiYkmbwtiKMlucO8i3e0Nnd"/>
+
+
+<meta charset="UTF-8"/>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="format-detection" content="telephone=no">
+
+<!-- Chrome, Firefox OS, Opera and Vivaldi -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0F421F">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#0F421F">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<style type="text/css">
+	:root {
+		--mc-yellow: #FDC300;
+		--mc-green: #264F36;
+		--make-order-shake-iteration: 6;
+	}
+</style>
+<!--	<link rel='stylesheet'  href="	https://cdnmedia.mcdonalds.co.il/_static/css/basic.static.css?v=--><!--" type="text/css" media="all" />-->
+<!--	<link rel='stylesheet'  href="--><!--/_static/css/basic.static.css" type="text/css" media="all" />-->
+<link rel='stylesheet'
+      href="https://newcdnmedia.mcdonalds.co.il/_static/css/basic.static.css?v=104bca"
+      type="text/css" media="all"/>
+
+	<meta name="robots" content="index, follow"/>
+
+<link rel="shortcut icon" href="https://newcdnmedia.mcdonalds.co.il/_media/images/favicon.ico?v=3">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet"/>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://newcdnmedia.mcdonalds.co.il/_static/js/basic.static.js?v=104bca"></script>
+    
+	<link rel="stylesheet" media="screen,print"
+	      href="https://newcdnmedia.mcdonalds.co.il/_static/css/home.static.css?v=104bca"
+	      type="text/css"/>
+<script type="text/javascript">
+    /*<[CDATA[*/
+    var mdlName = 'home';
+    var mdlID = '0';
+    var objID = '0';
+    var debug = false;
+	    /*]]>*/
+
+
+	    var translate_last_update = DB.get('translate_last_update');
+    var params_last_update = DB.get('params_last_update');
+    var cities_last_update = 1643520754;
+    var site_version = "4.4";
+    var langsArr = DB.get('langsArr');
+    var errorsArr = DB.get('errorsArr');
+    var paramsArr = DB.get('paramsArr');
+    var branchesArr = DB.get('store_titleArr');
+    var random_popupArr = []
+    if (!branchesArr) {
+        DB.insert('store_titleArr', {"1":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d0\u05d9\u05dc\u05d5\u05df - \u05e7\u05d5\u05de\u05ea \u05d4\u05db\u05e0\u05d9\u05e1\u05d4","2":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05d6\u05d4\u05d1, \u05e8\u05d0\u05e9\u05dc\"\u05e6","3":"\u05ea\u05d7\u05e0\u05d4 \u05de\u05e8\u05db\u05d6\u05d9\u05ea \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1","5":"\u05e8\u05de\u05ea \u05d0\u05d1\u05d9\u05d1 \u05d2\u05d9\u05de\u05dc","7":"\u05e6\u05d5\u05de\u05ea \u05d2\u05d5\u05dc\u05e0\u05d9","9":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d0\u05d5\u05e8\u05d5\u05ea, \u05d0\u05d5\u05e8 \u05e2\u05e7\u05d9\u05d1\u05d0 (\u05db\u05e9\u05e8)","10":"\u05d5\u05d5\u05dc\u05e7\u05df - \u05d7\u05d5\u05e6\u05d5\u05ea \u05d4\u05de\u05e4\u05e8\u05e5","12":"\u05dc\u05d5\u05e0\u05d3\u05d5\u05df \u05de\u05d9\u05e0\u05d9\u05e1\u05d8\u05d5\u05e8, \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1","13":"\u05d3\u05d9\u05d6\u05e0\u05d2\u05d5\u05e3 \u05e1\u05e0\u05d8\u05e8","14":"\u05d0\u05dc\u05d5\u05e0\u05d9\u05dd","15":"\u05d4\u05e8\u05e6\u05dc\u05d9\u05d4 \u05e6\u05d5\u05de\u05ea \u05d4\u05e1\u05d9\u05e8\u05d4","17":"\u05e1\u05d9\u05e0\u05de\u05d5\u05dc \u05d7\u05d9\u05e4\u05d4 - \u05de\u05ea\u05d7\u05dd \u05d4\u05de\u05e1\u05e2\u05d3\u05d5\u05ea (\u05db\u05e9\u05e8)","19":"\u05ea\u05d7\u05e0\u05d4 \u05de\u05e8\u05db\u05d6\u05d9\u05ea \u05e0\u05ea\u05e0\u05d9\u05d4","24":"\u05e7\u05e0\u05d9\u05d5\u05df G \u05d9\u05e7\u05e0\u05e2\u05dd","26":"\u05d8\u05d9\u05d9\u05dc\u05ea \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1","28":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e8\u05d7\u05d5\u05d1\u05d5\u05ea","29":"\u05d2\u05df \u05e9\u05de\u05d5\u05d0\u05dc","34":"\u05e9\u05d5\u05d4\u05dd (\u05db\u05e9\u05e8)","35":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e9\u05de\u05d5\u05e0\u05d4 \u05d1\u05d0\u05de\u05e6\u05e2 (\u05db\u05e9\u05e8)","37":"\u05ea\u05de\u05e8\u05d4","38":"\u05e7\u05e0\u05d9\u05d5\u05df \u05de\u05d5\u05dc \u05d4\u05d9\u05dd, \u05d0\u05d9\u05dc\u05ea","40":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05e1\u05d9\u05d8\u05d9 \u05d0\u05e9\u05d3\u05d5\u05d3","43":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d1\u05ea \u05d9\u05dd (\u05db\u05e9\u05e8)","45":"\u05e0\u05d5\u05e3 \u05d4\u05d2\u05dc\u05d9\u05dc (\u05e0\u05e6\u05e8\u05ea \u05e2\u05d9\u05dc\u05d9\u05ea) - \u05ea\u05d7\u05e0\u05ea \u05d3\u05dc\u05e7 \u05e8\u05d5\u05d6\u05e0\u05e4\u05dc\u05d3","46":"\u05d1\u05d9\u05d2 \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2","47":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e8\u05de\u05ea \u05d0\u05d1\u05d9\u05d1 (\u05db\u05e9\u05e8)","49":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d7\u05d9\u05e4\u05d4","50":"\u05ea\u05d7\u05e0\u05d4 \u05de\u05e8\u05db\u05d6\u05d9\u05ea \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2 (\u05db\u05e9\u05e8)","51":"\u05e8\u05de\u05ea \u05e4\u05d5\u05dc\u05d2, \u05e0\u05ea\u05e0\u05d9\u05d4","52":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e9\u05e2\u05e8 \u05e8\u05d0\u05e9\u05d5\u05df","53":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05e9\u05dc\u05d5\u05dd \u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9","54":"\u05db\u05e8\u05de\u05d9\u05d0\u05dc - \u05ea\u05d7\u05e0\u05ea \u05d3\u05dc\u05e7 \u05e1\u05d5\u05e0\u05d5\u05dc","55":"\u05e9\u05e4\u05d9\u05d9\u05dd","56":"\u05e8\u05de\u05ea \u05d4\u05e9\u05e8\u05d5\u05df","59":"\u05d3\u05dc\u05e7 \u05d0\u05d5\u05dc\u05d2\u05d4","60":"\u05e6\u05d5\u05de\u05ea \u05e9\u05d5\u05e7\u05ea","61":"\u05de\u05ea\u05d7\u05dd \u05d4\u05d1\u05d5\u05e8\u05e1\u05d4, \u05e8\u05de\u05ea-\u05d2\u05df (\u05db\u05e9\u05e8)","62":"\u05e4\u05d0\u05e8\u05e7 \u05d4\u05e6\u05e4\u05d5\u05df - \u05de\u05e2\u05d9\u05d9\u05df \u05d1\u05e8\u05d5\u05da","63":"\u05e1\u05d9\u05d8\u05d9 \u05e1\u05e0\u05d8\u05e8, \u05d7\u05d9\u05e4\u05d4","64":"INMANAGE","65":"\u05de\u05e9\u05e8\u05d3\u05d9\u05dd \u05de\u05e2\u05d1\u05d3\u05d4 65","66":"\u05e6\u05d5\u05de\u05ea \u05e8\u05d0\u05dd - \u05de\u05e1\u05de\u05d9\u05d4","71":"\u05d2\u05e8\u05e0\u05d3 \u05e7\u05e0\u05d9\u05d5\u05df - \u05e7\u05d5\u05de\u05d4 1","72":"\u05d4\u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05d2\u05d3\u05d5\u05dc, \u05e4\u05ea\u05d7-\u05ea\u05e7\u05d5\u05d5\u05d4","73":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d1\u05d9\u05d0\u05dc\u05d9\u05e7 \u05e8\u05de\u05ea-\u05d2\u05df (\u05db\u05e9\u05e8)","74":"\u05d7\u05e6\u05e8\u05d5\u05ea \u05d9\u05e4\u05d5","75":"\u05e7\u05e0\u05d9\u05d5\u05df M \u05d4\u05d3\u05e8\u05da, \u05d1\u05d9\u05ea \u05d7\u05d9\u05e8\u05d5\u05ea","76":"\u05e1\u05d1\u05d9\u05d5\u05df \u05e1\u05e0\u05d8\u05e8, \u05e0\u05d5\u05d5\u05d4 \u05e1\u05d1\u05d9\u05d5\u05df","78":"\u05e7\u05e8\u05d9\u05d5\u05df - \u05de\u05ea\u05d7\u05dd \u05d4\u05de\u05e1\u05e2\u05d3\u05d5\u05ea","79":"\u05d4\u05d3\u05e8 \u05d7\u05d9\u05e4\u05d4","80":"\u05e4\u05d9\u05e0\u05e1, \u05e4\u05ea\u05d7-\u05ea\u05e7\u05d5\u05d5\u05d4 (\u05db\u05e9\u05e8)","82":"\u05d1\u05d9\u05d2 \u05d1\u05d9\u05ea \u05e9\u05de\u05e9 (\u05db\u05e9\u05e8)","83":"\u05de\u05d2\u05d3\u05dc\u05d9 \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1","84":"\u05e7\u05e8\u05d9\u05ea \u05e8\u05d1\u05d9\u05df, \u05d7\u05d5\u05dc\u05d5\u05df","86":"\u05db\u05e4\u05e8 \u05e0\u05d9\u05df","89":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e8\u05e0\u05e0\u05d9\u05dd (\u05db\u05e9\u05e8)","90":"\u05e4\u05e8\u05d3\u05e1\u05d9\u05d4","91":"\u05d0\u05d5\u05e0\u05d9\u05d1\u05e8\u05e1\u05d9\u05d8\u05ea \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1 (\u05db\u05e9\u05e8)","94":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e7\u05e8\u05d9\u05ea-\u05d0\u05d5\u05e0\u05d5","95":"\u05d1\u05d9\u05d2 \u05e8\u05d2\u05d1\u05d4","96":"\u05de\u05d9\u05e7\u05d3\u05d5 \u05e1\u05e0\u05d8\u05e8, \u05ea\u05dc \u05d1\u05e8\u05d5\u05da","98":"\u05e8\u05d0\u05e9 \u05d4\u05e2\u05d9\u05df \u05dc\u05d1 \u05d0\u05e4\u05e7 (\u05db\u05e9\u05e8)","99":"\u05e1\u05d9\u05e0\u05de\u05d4 \u05e1\u05d9\u05d8\u05d9 \u05d2\u05dc\u05d9\u05dc\u05d5\u05ea","100":"\u05e4\u05d8\u05e8\u05d4 \u05d9\u05dd \u05d4\u05de\u05dc\u05d7","103":"\u05db\u05e8\u05de\u05d9\u05d0\u05dc \u05de\u05e8\u05db\u05d6","104":"\u05de\u05e8\u05db\u05d6 \u05d5\u05d9\u05e6\u05de\u05df - \u05d0\u05d9\u05db\u05d9\u05dc\u05d5\u05d1, \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1","105":"\u05e6\u05d5\u05de\u05ea \u05e9\u05d5\u05e8\u05e9 - \u05e9\u05d5\u05d0\u05d1\u05d4","107":"\u05d5\u05d5\u05dc\u05e4\u05e1\u05d5\u05df \u05d7\u05d5\u05dc\u05d5\u05df","108":"\u05d0\u05e8\u05e0\u05d4 \u05d4\u05e8\u05e6\u05dc\u05d9\u05d4","111":"\u05de\u05d5\u05dc \u05d4\u05e4\u05d0\u05e8\u05e7, \u05e8\u05e2\u05e0\u05e0\u05d4","112":"\u05de\u05d3\u05e8\u05d7\u05d5\u05d1 \u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3 - \u05d4\u05d1\u05d0\u05e8, \u05e8\u05d0\u05e9\u05dc\"\u05e6","117":"\u05d1\u05d9\u05d4\"\u05d7 \u05e8\u05de\u05d1\u05dd (\u05db\u05e9\u05e8)","119":"\u05ea\u05dc \u05d7\u05e0\u05df (\u05db\u05e9\u05e8)","120":"\u05e7\u05e0\u05d9\u05d5\u05df \u05dc\u05d1 \u05d4\u05e2\u05d9\u05e8, \u05e7\u05e8\u05d9\u05ea \u05d2\u05ea (\u05db\u05e9\u05e8)","122":"\u05d4\u05e8 \u05d9\u05d5\u05e0\u05d4, \u05e0\u05d5\u05e3 \u05d4\u05d2\u05dc\u05d9\u05dc (\u05e0\u05e6\u05e8\u05ea \u05e2\u05d9\u05dc\u05d9\u05ea)","123":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d2\u05d9\u05e8\u05d5\u05df, \u05d0\u05e9\u05e7\u05dc\u05d5\u05df (\u05db\u05e9\u05e8)","124":"\u05e2\u05d9\u05df \u05d9\u05d4\u05d1","125":"\u05e6\u05d5\u05de\u05ea \u05de\u05d2\u05d9\u05d3\u05d5","126":"\u05e9\u05e2\u05e8\u05d9 \u05d7\u05d3\u05e8\u05d4","127":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e2\u05e8\u05d9\u05dd, \u05db\u05e4\u05e8 \u05e1\u05d1\u05d0","128":"\u05d0\u05dc\u05d5\u05df \u05d4\u05e9\u05e8\u05d5\u05df, \u05de\u05e9\u05de\u05e8 \u05d4\u05e9\u05e8\u05d5\u05df","129":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d0\u05d9\u05dc\u05d5\u05df - \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d5\u05dc\u05e0\u05d5\u05e2","130":"\u05e1\u05d8\u05d0\u05e8 \u05e1\u05e0\u05d8\u05e8, \u05d0\u05e9\u05d3\u05d5\u05d3","131":"\u05d1\u05d9\u05ea \u05d4\u05db\u05e8\u05dd, \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd (\u05db\u05e9\u05e8)","134":"\u05d0\u05dd \u05d4\u05de\u05e4\u05e8\u05e5","135":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d2\u05d1\u05e2\u05ea\u05d9\u05d9\u05dd - \u05e7\u05d5\u05de\u05ea \u05d4\u05e7\u05d5\u05dc\u05e0\u05d5\u05e2","136":"\u05d1\u05d9\u05d4\"\u05d7 \u05d1\u05d9\u05dc\u05d9\u05e0\u05e1\u05d5\u05df (\u05db\u05e9\u05e8)","138":"\u05d3\u05dc\u05d9\u05ea \u05d0\u05dc \u05db\u05e8\u05de\u05dc","139":"\u05d3\u05d9\u05de\u05d5\u05e0\u05d4 - \u05e4\u05e8\u05e5 \u05e1\u05e0\u05d8\u05e8 (\u05db\u05e9\u05e8)","140":"\u05d0\u05dd \u05d4\u05de\u05d5\u05e9\u05d1\u05d5\u05ea, \u05e4\u05ea\u05d7-\u05ea\u05e7\u05d5\u05d5\u05d4","142":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e9\u05d1\u05e2\u05ea \u05d4\u05db\u05d5\u05db\u05d1\u05d9\u05dd","143":"\u05d1\u05d9\u05d4\"\u05d7 \u05ea\u05dc \u05d4\u05e9\u05d5\u05de\u05e8 (\u05db\u05e9\u05e8)","144":"\u05d3\u05d5\u05d3\u05d2\u2019 \u05e1\u05e0\u05d8\u05e8, \u05e0\u05d5\u05e3 \u05d4\u05d2\u05dc\u05d9\u05dc (\u05e0\u05e6\u05e8\u05ea \u05e2\u05d9\u05dc\u05d9\u05ea)","145":"\u05d4\u05de\u05d5\u05e9\u05d1\u05d4 \u05d2\u05d3\u05e8\u05d4 (\u05db\u05e9\u05e8)","146":"\u05de\u05e8\u05db\u05d6 One, \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2","147":"\u05d1\u05d9\u05d4\"\u05d7 \u05d0\u05e1\u05e3 \u05d4\u05e8\u05d5\u05e4\u05d0 (\u05db\u05e9\u05e8)","149":"\u05d1\u05d9\u05d2 \u05e7\u05e1\u05d8\u05d9\u05e0\u05d4","150":"\u05de\u05e8\u05db\u05d6 \u05d5\u05d9\u05e6\u05de\u05df, \u05e8\u05d7\u05d5\u05d1\u05d5\u05ea","151":"\u05d4\u05e1\u05d9\u05d1\u05d9\u05dd, \u05e4\u05ea\u05d7-\u05ea\u05e7\u05d5\u05d5\u05d4","152":"\u05e1\u05d8\u05d0\u05e8 \u05e1\u05e0\u05d8\u05e8 \u05d4\u05de\u05ea\u05d7\u05dd \u05d4\u05d7\u05d3\u05e9 (\u05db\u05e9\u05e8)","154":"\u05e1\u05db\u05e0\u05d9\u05df","155":"\u05d4\u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05d2\u05d3\u05d5\u05dc, \u05e4\u05ea\u05d7-\u05ea\u05e7\u05d5\u05d5\u05d4 (\u05db\u05e9\u05e8)","156":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9, \u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df (\u05db\u05e9\u05e8)","157":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05d2\u05d1\u05e2\u05d4, \u05d2\u05d1\u05e2\u05ea \u05e9\u05de\u05d5\u05d0\u05dc (\u05db\u05e9\u05e8)","158":"\u05e7\u05e8\u05d9\u05d5\u05df - \u05de\u05ea\u05d7\u05dd \u05d1\u05ea\u05d9 \u05d4\u05e7\u05d5\u05dc\u05e0\u05d5\u05e2","159":"\u05d7\u05d5\u05e6\u05d5\u05ea \u05db\u05e8\u05de\u05d9\u05d0\u05dc","160":"\u05e1\u05d9\u05d8\u05d9 \u05e4\u05d5\u05dc\u05d2","162":"\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0 G - \u05e7\u05d5\u05de\u05ea \u05e7\u05e8\u05e7\u05e2","163":"\u05d1\u05d9\u05d2 \u05e4\u05d0\u05e9\u05df, \u05e0\u05e6\u05e8\u05ea","164":"\u05db\u05d5\u05db\u05d1 \u05d9\u05d0\u05d9\u05e8","165":"\u05e2\u05e4\u05d5\u05dc\u05d4 - \u05ea\u05d7\u05e0\u05ea \u05d3\u05dc\u05e7 \u05d9\u05d5\u05e7\u05dc\u05e8","166":"\u05e8\u05d5\u05d8\u05e9\u05d9\u05dc\u05d3, \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1","167":"\u05d1\u05d9\u05d4\"\u05d7 \u05de\u05d0\u05d9\u05e8, \u05db\u05e4\u05e8 \u05e1\u05d1\u05d0 (\u05db\u05e9\u05e8)","169":"\u05e1\u05d9\u05e0\u05de\u05d4 \u05e1\u05d9\u05d8\u05d9 \u05e8\u05d0\u05e9\u05dc\"\u05e6","170":"\u05e2\u05d1\u05d3\u05ea","172":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e9\u05e8\u05d5\u05e0\u05d9\u05dd","173":"\u05d0\u05d7\"\u05d9 \u05d0\u05d9\u05dc\u05ea \u05e7\u05e8\u05d9\u05ea \u05d7\u05d9\u05d9\u05dd","174":"\u05d1\u05d9\u05ea \u05e7\u05de\u05d4","175":"\u05e7\u05e0\u05d9\u05d5\u05df \u05dc\u05d1 \u05d7\u05d3\u05e8\u05d4 (\u05db\u05e9\u05e8)","177":"\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0 G - \u05e7\u05d5\u05de\u05d4 2 (\u05db\u05e9\u05e8)","178":"\u05e7\u05e0\u05d9\u05d5\u05df \u05de\u05dc\u05d7\u05d4 (\u05db\u05e9\u05e8)","180":"\u05ea\u05d7\u05e0\u05d4 \u05de\u05e8\u05db\u05d6\u05d9\u05ea \u05d8\u05d1\u05e8\u05d9\u05d4 (\u05db\u05e9\u05e8)","182":"\u05e1\u05d9\u05e0\u05de\u05d5\u05dc \u05d7\u05d9\u05e4\u05d4 - \u05e7\u05d5\u05de\u05ea \u05d1\u05ea\u05d9 \u05d4\u05e7\u05d5\u05dc\u05e0\u05d5\u05e2","183":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9, \u05e2\u05db\u05d5","184":"\u05e7\u05e0\u05d9\u05d5\u05df \u05db\u05e4\u05d9\u05e8, \u05e7\u05e8\u05d9\u05ea \u05d0\u05ea\u05d0 (\u05db\u05e9\u05e8)","185":"\u05e1\u05d5\u05e0\u05d5\u05dc \u05d3\u05e0\u05d4, \u05e8\u05d0\u05e9\u05dc\"\u05e6","186":"\u05d1\u05d9\u05d2 \u05e7\u05e8\u05d9\u05d9\u05ea \u05e9\u05de\u05d5\u05e0\u05d4","188":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e2\u05d9\u05e8 \u05d9\u05de\u05d9\u05dd, \u05e0\u05ea\u05e0\u05d9\u05d4 (\u05db\u05e9\u05e8)","189":"\u05d1\u05d9\u05d2 \u05e4\u05e8\u05d3\u05e1 \u05d7\u05e0\u05d4","190":"\u05db\u05e4\u05e8 \u05d2\u05e0\u05d9\u05dd, \u05e4\u05ea\u05d7-\u05ea\u05e7\u05d5\u05d5\u05d4 (\u05db\u05e9\u05e8)","193":"\u05de\u05d5\u05e0\u05d3 \u05e1\u05e0\u05d8\u05e8, \u05ea\u05dc \u05de\u05d5\u05e0\u05d3 (\u05db\u05e9\u05e8)","194":"\u05d9\u05e1 \u05e4\u05dc\u05d0\u05e0\u05d8, \u05e8\u05d0\u05e9\u05dc\"\u05e6","195":"\u05e1\u05d5\u05e0\u05d5\u05dc \u05db\u05e4\u05e8 \u05d9\u05d5\u05e0\u05d4","196":"\u05de\u05e7 \u05d2\u05dc\u05d9\u05d3\u05d4 \u05e7\u05e0\u05d9\u05d5\u05df \u05e8\u05d7\u05d5\u05d1\u05d5\u05ea","197":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05d1\u05d0\u05e8, \u05e8\u05d0\u05e9\u05dc\"\u05e6 (\u05db\u05e9\u05e8)","199":"\u05e6\u05d5\u05de\u05ea \u05e6\u05de\u05d7","200":"\u05d1\u05d9\u05dc\u05d5 \u05e1\u05e0\u05d8\u05e8","201":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05d6\u05d4\u05d1 - \u05de\u05ea\u05d7\u05dd \u05d4\u05de\u05e1\u05e2\u05d3\u05d5\u05ea \u05d4\u05d7\u05d3\u05e9","202":"\u05e7\u05e8\u05d9\u05d9\u05ea \u05d4\u05e9\u05e8\u05d5\u05df (\u05db\u05e9\u05e8)","203":"\u05e0\u05de\u05dc \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1","204":"\u05d2\u05e8\u05e0\u05d3 \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2 (\u05db\u05e9\u05e8)","205":"\u05d9\u05e9\u05e4\u05e8\u05d5 \u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df","206":"\u05d1\u05d9\u05d2 \u05e4\u05d0\u05e9\u05df, \u05d8\u05d1\u05e8\u05d9\u05d4 (\u05db\u05e9\u05e8)","207":"\u05d3\u05d5\u05d9\u05d3\u05d9 \u05e1\u05e0\u05d8\u05e8, \u05d0\u05e9\u05e7\u05dc\u05d5\u05df","209":"\u05de\u05d3\u05e8\u05d7\u05d5\u05d1 \u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4, \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd (\u05db\u05e9\u05e8)","210":"\u05e1\u05d9\u05e0\u05de\u05d4 \u05e1\u05d9\u05d8\u05d9, \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd (\u05db\u05e9\u05e8)","211":"\u05e0\u05e6\u05e8\u05ea \u05db\u05e0\u05e1\u05d9\u05d9\u05ea \u05d4\u05d1\u05e9\u05d5\u05e8\u05d4","212":"\u05d0\u05d9\u05d9\u05e1 \u05de\u05d5\u05dc - \u05e7\u05d5\u05de\u05ea \u05d4\u05db\u05e0\u05d9\u05e1\u05d4","213":"\u05d3\u05d5\u05e8 \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd, \u05e8\u05d0\u05e9\u05dc\"\u05e6","214":"\u05e6\u05d5\u05de\u05ea \u05e4\u05d5\u05e8\u05d3\u05d9\u05e1","215":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e9\u05e2\u05e8 \u05d4\u05e6\u05e4\u05d5\u05df - \u05d0\u05d9\u05e7\u05d0\u05d4 (\u05db\u05e9\u05e8)","216":"\u05e7\u05e0\u05d9\u05d5\u05df \u05db\u05e4\u05e8 \u05e1\u05d1\u05d0 \u05d4\u05d9\u05e8\u05d5\u05e7\u05d4","217":"\u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9 \u05e8\u05de\u05dc\u05d4 (\u05db\u05e9\u05e8)","218":"\u05d1\u05d9\u05d2 \u05e4\u05d0\u05e9\u05df, \u05d0\u05e9\u05d3\u05d5\u05d3","219":"\u05d2\u05df \u05d9\u05d1\u05e0\u05d4","220":"\u05d0\u05e8\u05e0\u05d4 \u05e0\u05d4\u05e8\u05d9\u05d4","221":"\u05dc\u05d4 \u05e4\u05d0\u05e8\u05e7 \u05d7\u05d5\u05dc\u05d5\u05df","222":"\u05db\u05e4\u05e8 \u05ea\u05d1\u05d5\u05e8","223":"\u05d9\u05e1 \u05e4\u05dc\u05d0\u05e0\u05d8 \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd","224":"\u05d1\u05d9\u05d2 \u05e6\u2019\u05e7 \u05e4\u05d5\u05e1\u05d8","225":"\u05d1\u05d9\u05d6\u05e0\u05e1 \u05e4\u05d0\u05e8\u05e7 \u05d7\u05d5\u05dc\u05d5\u05df (\u05db\u05e9\u05e8)","226":"\u05e7\u05e0\u05d9\u05d5\u05df G \u05d9\u05d1\u05e0\u05d4 (\u05db\u05e9\u05e8)","227":"\u05e8\u05d5\u05d2\u05d5\u05d1\u05d9\u05df \u05d9\u05d1\u05e0\u05d4","228":"\u05d0\u05d5\u05e9\u05d9\u05dc\u05e0\u05d3 \u05db\u05e4\u05e8 \u05e1\u05d1\u05d0","229":"\u05d9\u05e1 \u05e4\u05dc\u05d0\u05e0\u05d8 \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2","230":"\u05e7\u05e0\u05d9\u05d5\u05df \u05de\u05d1\u05e9\u05e8\u05ea (\u05db\u05e9\u05e8)","231":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9 \u05d4\u05e0\u05d2\u05d1 (\u05db\u05e9\u05e8)","232":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9 \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd","233":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05d0\u05d5\u05e4\u05e0\u05d4 TLV \u05ea\"\u05d0","234":"\u05e6\u05d9\u05dd \u05d0\u05d5\u05e8\u05d1\u05df \u05d1\u05d9\u05ea \u05e9\u05d0\u05df (\u05db\u05e9\u05e8)","235":"\u05de\u05d5\u05dc \u05d6\u05db\u05e8\u05d5\u05df","236":"\u05d2\u05dc\u05d5\u05d1\u05d5\u05e1 \u05e1\u05e0\u05d8\u05e8, \u05d0\u05e9\u05e7\u05dc\u05d5\u05df","237":"\u05e9\u05e8\u05d5\u05e0\u05d4 \u05ea\"\u05d0","238":"\u05d3\u05d5\u05e8 \u05de\u05e2\u05dc\u05d5\u05ea","239":"\u05d1\u05d9\u05d2 \u05d0\u05d9\u05dc\u05ea (\u05db\u05e9\u05e8)","240":"\u05d1\u05d9\u05ea \u05e7\u05de\u05d4 \u05d1\u05ea\u05d7\u05e0\u05ea \u05e4\u05d6 (\u05db\u05e9\u05e8)","241":"\u05de\u05d5\u05dc \u05d4\u05d7\u05d5\u05e3 \u05d7\u05d3\u05e8\u05d4","242":"\u05d0\u05d5\u05dd \u05d0\u05dc \u05e4\u05d0\u05d7\u05dd seven","243":"\u05d1\u05d9\u05d2 \u05d9\u05e8\u05db\u05d0","244":"\u05e6\u05d9\u05dd \u05d0\u05d5\u05e8\u05d1\u05df \u05e2\u05e8\u05d3","245":"\u05d1\u05d9\u05d2 \u05d9\u05e7\u05e0\u05e2\u05dd (\u05db\u05e9\u05e8)","246":"\u05d0\u05d5\u05e8\u05d9\u05d5\u05df \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd","247":"\u05e7\u05e0\u05d9\u05d5\u05df MORE \u05d7\u05e8\u05d9\u05e9","248":"\u05e2\u05de\u05d9\u05e2\u05d3","249":"\u05d9\u05e9\u05e4\u05e8\u05d5 \u05e0\u05e1 \u05e6\u05d9\u05d5\u05e0\u05d4","250":"\u05e2\u05de\u05e7 \u05e1\u05e0\u05d8\u05e8","251":"\u05e7\u05e0\u05d9\u05d5\u05df \u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9 \u05d7\u05d5\u05dc\u05d5\u05df (\u05db\u05e9\u05e8)","252":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d9\u05dd \u05d4\u05de\u05dc\u05d7 (\u05db\u05e9\u05e8)","253":"\u05e1\u05d9\u05e0\u05de\u05d4 \u05e1\u05d9\u05d8\u05d9 \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2","255":"\u05e0\u05ea\u05d1\"\u05d2 \u05d8\u05e8\u05de\u05d9\u05e0\u05dc 3 \u05d3\u05d9\u05d5\u05d8\u05d9 \u05e4\u05e8\u05d9 (\u05db\u05e9\u05e8)","256":"\u05d8\u05e8\u05de\u05d9\u05e0\u05dc 3 \u05d0\u05d5\u05dc\u05dd \u05db\u05e0\u05d9\u05e1\u05d4 (\u05db\u05e9\u05e8)","257":"\u05d1\u05d9\u05d2 \u05d8\u05d1\u05e8\u05d9\u05d4 - \u05e4\u05d5\u05e8\u05d9\u05d4 (\u05db\u05e9\u05e8)","258":"\u05e1\u05d9\u05e0\u05de\u05d4 \u05e1\u05d9\u05d8\u05d9 \u05e0\u05ea\u05e0\u05d9\u05d4","259":"G \u05db\u05d5\u05db\u05d1 \u05d4\u05e6\u05e4\u05d5\u05df","260":"\u05de\u05e6\u05e4\u05d4 \u05e8\u05de\u05d5\u05df","261":"\u05d0\u05d5\u05e0\u05d5 \u05de\u05e8\u05e7\u05d8","262":"\u05d1\u05d0\u05e7\u05d4 we center","263":"\u05e4\u05d9\u05d0\u05e0\u05d5 \u05e2\u05d9\u05e8 \u05d9\u05de\u05d9\u05dd (\u05db\u05e9\u05e8)","264":"MINI \u05e0\u05d5\u05d5\u05d4 \u05e8\u05d1\u05d9\u05df - \u05d0\u05d5\u05e8 \u05d9\u05d4\u05d5\u05d3\u05d4 (\u05db\u05e9\u05e8)","265":"GT \u05e1\u05e0\u05d8\u05e8 \u05e0\u05ea\u05d9\u05d1\u05d5\u05ea (\u05db\u05e9\u05e8)","266":"\u05de\u05e8\u05d9\u05e0\u05d4 \u05d0\u05e9\u05e7\u05dc\u05d5\u05df","267":"\u05de\u05ea\u05d7\u05dd \u05db\u05d5\u05e8\u05d3\u05e0\u05d9","268":"\u05ea\u05d7\u05e0\u05d4 \u05de\u05e8\u05db\u05d6\u05d9\u05ea \u05e2\u05e4\u05d5\u05dc\u05d4 (\u05db\u05e9\u05e8)","269":"\u05e1\u05d9\u05de\u05d5\u05dc \u05d0\u05e9\u05d3\u05d5\u05d3","270":"\u05d3\u05d5\u05e9\u05d9 \u05e1\u05e0\u05d8\u05e8","271":"\u05d2\u05e8\u05e0\u05d3 \u05e7\u05e0\u05d9\u05d5\u05df \u05de\u05ea\u05d7\u05dd \u05d4\u05de\u05e1\u05e2\u05d3\u05d5\u05ea \u05e7\u05d5\u05de\u05d4 3","272":"\u05d1\u05d9\u05d2 \u05d9\u05d4\u05d5\u05d3","273":"\u05e9\u05e4\u05d9\u05e8 \u05e1\u05e0\u05d8\u05e8","274":"\u05e9\u05e2\u05e8 \u05e4\u05dc\u05de\u05e8","275":"\u05d1\u05e2\u05e0\u05d4 - \u05d3\u05d9\u05e8 \u05d0\u05dc \u05d0\u05e1\u05d3, \u05d3\u05d1\u05d0\u05d7 \u05de\u05d5\u05dc","276":"\u05e7\u05e0\u05d9\u05d5\u05df \u05d3\u05de\u05e8\u05d9 \u05e1\u05e0\u05d8\u05e8 \u05d3\u05d9\u05de\u05d5\u05e0\u05d4 (\u05db\u05e9\u05e8)","277":"\u05e2\u05d3 \u05d4\u05dc\u05d5\u05dd","278":"\u05e1\u05d9\u05e0\u05de\u05d4 \u05e1\u05d9\u05d8\u05d9 \u05d7\u05d3\u05e8\u05d4","280":"\u05d8\u05d9\u05e8\u05d4","281":"\u05e7\u05e0\u05d9\u05d5\u05df \u05de\u05dc\u05db\u05ea \u05e9\u05d1\u05d0","502":"\u05de\u05e7 \u05d2\u05dc\u05d9\u05d3\u05d4 \u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05d6\u05d4\u05d1","503":"\u05de\u05e7 \u05d2\u05dc\u05d9\u05d3\u05d4 \u05e7\u05e0\u05d9\u05d5\u05df \u05d4\u05d0\u05d5\u05e4\u05e0\u05d4 TLV \u05ea\"\u05d0","504":"\u05de\u05e7 \u05d2\u05dc\u05d9\u05d3\u05d4 \u05e1\u05d9\u05e0\u05de\u05d4 \u05e1\u05d9\u05d8\u05d9 \u05e8\u05d0\u05e9\u05dc\"\u05e6","505":"\u05de\u05e7 \u05d2\u05dc\u05d9\u05d3\u05d4 \u05e7\u05e0\u05d9\u05d5\u05df \u05d7\u05d9\u05e4\u05d4","506":"\u05de\u05e7 \u05d2\u05dc\u05d9\u05d3\u05d4 \u05e9\u05d1\u05e2\u05ea \u05d4\u05db\u05d5\u05db\u05d1\u05d9\u05dd","507":"\u05de\u05e7 \u05d2\u05dc\u05d9\u05d3\u05d4 \u05e7\u05e0\u05d9\u05d5\u05df \u05e7\u05e8\u05d9\u05ea \u05d0\u05d5\u05e0\u05d5","508":"\u05de\u05e7 \u05d2\u05dc\u05d9\u05d3\u05d4 \u05de\u05dc\u05db\u05ea \u05e9\u05d1\u05d0","509":"\u05de\u05e7 \u05d2\u05dc\u05d9\u05d3\u05d4 \u05d0\u05d9\u05d9\u05e1 \u05de\u05d5\u05dc"}, true);
+    }
+
+    if (!langsArr || !errorsArr || !paramsArr || translate_last_update < 1650218025 || params_last_update < 1650218025 || (typeof errorsArr[1201] === "undefined")) {
+        DB.insert('translate_last_update', 1650218025, true);
+        DB.insert('params_last_update', 1650218025, true);
+        langsArr = (function () {
+            var json = null;
+            $.ajax({
+                'async': false,
+                'global': false,
+                'url': 'https://newcdnmedia.mcdonalds.co.il/_media/js/website/statics/languages.json',
+                'dataType': "json",
+                'success': function (data) {
+                    json = data;
+                }
+            });
+            return json;
+        })();
+        DB.insert('langsArr', langsArr, true);
+        errorsArr = (function () {
+            var json = null;
+            $.ajax({
+                'async': false,
+                'global': false,
+                'url': 'https://newcdnmedia.mcdonalds.co.il/_media/js/website/statics/errors.json',
+                'dataType': "json",
+                'success': function (data) {
+                    json = data;
+                }
+            });
+            return json;
+        })();
+        DB.insert('errorsArr', errorsArr, true);
+
+        paramsArr = (function () {
+            var json = null;
+            $.ajax({
+                'async': false,
+                'global': false,
+                'url': 'https://newcdnmedia.mcdonalds.co.il/_media/js/website/statics/parameters.json',
+                'dataType': "json",
+                'success': function (data) {
+                    json = data;
+                }
+            });
+            return json;
+        })();
+        DB.insert('paramsArr', paramsArr, true);
+    }
+
+
+	    var modulesUrls = {"0":"%D7%A2%D7%9E%D7%95%D7%93_%D7%94%D7%91%D7%99%D7%AA","404":"404","1":"","11":"%D7%AA%D7%A4%D7%A8%D7%99%D7%98_%D7%91%D7%97%D7%99%D7%A8%D7%AA_%D7%90%D7%A8%D7%95%D7%97%D7%94","110":"%D7%9E%D7%A1%D7%A2%D7%93%D7%95%D7%AA","12":"%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D_%D7%9E%D7%95%D7%A2%D7%93%D7%A4%D7%99%D7%9D","13":"%D7%9E%D7%95%D7%A6%D7%A8","15":"%D7%94%D7%96%D7%9E%D7%A0%D7%95%D7%AA_%D7%9E%D7%95%D7%A2%D7%93%D7%A4%D7%95%D7%AA","14":"%D7%94%D7%96%D7%9E%D7%A0%D7%95%D7%AA_%D7%90%D7%97%D7%A8%D7%95%D7%A0%D7%95%D7%AA","16":"%D7%94%D7%9E%D7%92%D7%A9_%D7%A9%D7%9C%D7%99","17":"","20":"%D7%A7%D7%95%D7%A4%D7%95%D7%A0%D7%99%D7%9D","18":"%D7%9B%D7%A8%D7%98%D7%99%D7%A1%D7%99_%D7%94%D7%90%D7%A9%D7%A8%D7%90%D7%99_%D7%A9%D7%9C%D7%99","19":"%D7%97%D7%A9%D7%91%D7%95%D7%A0%D7%95%D7%AA_paypal","21":"%D7%94%D7%92%D7%93%D7%A8%D7%95%D7%AA_%D7%90%D7%91%D7%98%D7%97%D7%94","22":"%D7%94%D7%94%D7%98%D7%91%D7%95%D7%AA_%D7%A9%D7%9C%D7%99","23":"%D7%94%D7%9B%D7%AA%D7%95%D7%91%D7%95%D7%AA_%D7%A9%D7%9C%D7%99","24":"%D7%9E%D7%A2%D7%A7%D7%91_%D7%94%D7%96%D7%9E%D7%A0%D7%94","25":"%D7%90%D7%99%D7%A9%D7%95%D7%A8_%D7%94%D7%96%D7%9E%D7%A0%D7%94","26":"%D7%94%D7%92%D7%93%D7%A8%D7%95%D7%AA","27":"%D7%AA%D7%95%D7%9B%D7%9F","28":"%D7%A9%D7%90%D7%9C%D7%95%D7%AA_%D7%A0%D7%A4%D7%95%D7%A6%D7%95%D7%AA","29":"%D7%91%D7%A8%D7%95%D7%9A_%D7%94%D7%91%D7%90","500":"%D7%99%D7%A6%D7%99%D7%A8%D7%AA_%D7%A7%D7%A9%D7%A8","510":"%D7%A1%D7%A7%D7%A8","335":"McCoins","326":"%D7%AA%D7%A9%D7%9C%D7%95%D7%9D_McCoins","30":"%D7%AA%D7%A4%D7%A8%D7%99%D7%98_McCoins","100":"%D7%9E%D7%99%D7%99%D7%9C_%D7%90%D7%99%D7%A9%D7%95%D7%A8_%D7%94%D7%96%D7%9E%D7%A0%D7%94","560":"%D7%94%D7%92%D7%A9%D7%94_%D7%9C%D7%A9%D7%95%D7%9C%D7%97%D7%9F","555":"%D7%A1%D7%99%D7%95%D7%9D_%D7%AA%D7%A9%D7%9C%D7%95%D7%9D_%D7%91%D7%99%D7%98","31":"%D7%94%D7%A8%D7%9B%D7%91%D7%99%D7%9D_%D7%A9%D7%9C%D7%99","101":"%D7%9E%D7%99%D7%99%D7%9C_%D7%91%D7%99%D7%98%D7%95%D7%9C_%D7%94%D7%96%D7%9E%D7%A0%D7%94","321":"%D7%9E%D7%A4%D7%AA_%D7%9B%D7%AA%D7%95%D7%91%D7%AA"};
+
+	
+    $(window).bind('beforeunload', function () {
+        //commented due to it removing loader before it is even shown
+        //loader(0);
+    });
+
+    function initFingerprintJS() {
+        FingerprintJS.load().then(fp => {
+            // The FingerprintJS agent is ready.
+            // Get a visitor identifier when you'd like to.
+            var options = {
+                excludes: {
+                    webdriver: true,
+                    language: true,
+                    colorDepth: true,
+                    screenResolution: true,
+                    availableScreenResolution: true,
+                    addBehavior: true,
+                    cpuClass: true,
+                    doNotTrack: true,
+                    plugins: true,
+                    canvas: true,
+                    webgl: true,
+                    webglVendorAndRenderer: true,
+                    adBlock: true,
+                    fonts: true,
+                    fontsFlash: true,
+                    audio: true,
+                    enumerateDevices: true,
+                }
+            };
+
+            fp.get(options).then(result => {
+                var components = Object.values(result.components);
+                var values = components.map(function (component) {
+                    return component.value
+                });
+
+                var web_token = FingerprintJS.murmurX64Hash128(values.join(''), 31);
+                DB.insert('web_token', web_token, true);
+            });
+        });
+    }
+
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TBJRXQ');</script>
+<!-- End Google Tag Manager -->	<script type="text/javascript">
+        $(function () {
+            Order.start_order_from_request();
+            GoogleTagManager.orderChoice();
+
+            var choose_meal = 0;
+
+            if (choose_meal) {
+                openChooseChannelPopup();
+            } else {
+				            }
+        });
+		        var media_solider = 'https://newcdnmedia.mcdonalds.co.il/_media/media/60/13743.jpg?t=1647901435';
+        var media_solider_tablet = 'https://newcdnmedia.mcdonalds.co.il/_media/media/60/13740.jpg?t=1647901463';
+        var media_solider_background = 'https://newcdnmedia.mcdonalds.co.il/_media/media/60/13742.jpg?t=1647901474';
+        var is_delivery = 0;
+        /*	var arrayCities = [];
+         var arrayCityNmber = [];
+         // this function update the arraies of cities
+         updateCitiesArray();
+
+         */
+	</script>
+</head>
+<body class="homepage mdl_home">
+
+<div class="loader hide">
+	<img src="https://newcdnmedia.mcdonalds.co.il/_media/media/19/6438.gif?t=1646731360" />
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBJRXQ"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="body-wrap">
+	<div class="page-wrap">
+		<header class="header" >
+			<!-- <div class="head-grey-strip"></div> -->
+			<div class="frame-cont-repos">
+				<div class="link-width-count-repos visible-xs cart-shake">
+					<a onclick="go_to_url('/%D7%94%D7%9E%D7%92%D7%A9_%D7%A9%D7%9C%D7%99')" class="mobile-shopping-cart">
+						<img src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/header-mobile-repos-block.png" alt="footer-img" class="img-responsive img-mobile-shake">
+						<h5 class="head-mob-repos-text">המגש שלי</h5>
+					</a>
+				</div>
+			</div>
+			<nav class="nav-wrap container">
+				<a href="/" onclick="go_to_url('/עמוד_הבית')" class="logo hidden-xs "><img src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/logomac.svg" alt="logo"></a>
+									<a href="/" class="logo-mobile visible-xs"><img src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/newLogo_mobile.svg" alt="logo"></a>
+			
+
+				<ul class="nav-link list-unstyled list-inline head-link hidden-md hidden-sm hidden-xs">
+					<li onclick="go_to_url('/%D7%A2%D7%9E%D7%95%D7%93_%D7%94%D7%91%D7%99%D7%AA')"><a href="/">ראשי</a></li>
+					<li onclick="go_to_url('/%D7%AA%D7%A4%D7%A8%D7%99%D7%98_%D7%91%D7%97%D7%99%D7%A8%D7%AA_%D7%90%D7%A8%D7%95%D7%97%D7%94')"><a class="head-separate">תפריט</a></li>
+					<li onclick="go_to_url('/%D7%9E%D7%A1%D7%A2%D7%93%D7%95%D7%AA')"><a class="head-separate footer-separate">מסעדות</a></li>
+				</ul>
+
+
+				<!-- Include dropdown -->
+				<!--						<a href="javascript:close_top_menu();" class="come-in not-register loginModalShow hidden-md hidden-sm hidden-xs" data-modal="popup-signup"><i class="com-in-image"></i>התחברות</a>-->
+
+                        <a href="javascript:close_top_menu();" class="come-in not-register newLoginModalShow hidden-md hidden-sm hidden-xs" data-modal="popup-new-login"><i class="com-in-image"></i>התחברות</a>
+
+						<!-- Include dropdown -->
+						<aside class="dropdown head-log-dropdown hidden-lg" id="sidebar-toggle">
+	<div class="body-drop">
+					<a href="javascript:close_top_menu();" class="come-in not-register modalShowFunction hidden-lg" data-modal="popup-new-login"><i class="com-in-image"></i>התחברות</a>
+<!--            temporary new login btn-->
+<!--			<a href="javascript:close_top_menu();" class="come-in not-register modalShowFunction hidden-lg" data-modal="popup-new-login"><i class="com-in-image"></i>התחברות חדשה</a>-->
+
+		
+		<!------- start code for logout user ------>
+
+
+		<ul class="dropdown-menu repost-dropdown-menu" aria-labelledby="dLabel">
+			<li><ul class="empty-to-mobile-menu"></ul></li>
+			<li><a href="/" onclick="loader(1)" class="focus-efect custom-drop drop-thirteen fixIconPosition">ראשי</a></li>
+			<li><a href="/%D7%AA%D7%A4%D7%A8%D7%99%D7%98_%D7%91%D7%97%D7%99%D7%A8%D7%AA_%D7%90%D7%A8%D7%95%D7%97%D7%94" onclick="loader(1)" class="focus-efect custom-drop drop-fourteen">תפריט</a></li>
+			<li><a href="/%D7%9E%D7%A1%D7%A2%D7%93%D7%95%D7%AA" onclick="loader(1)" class="focus-efect custom-drop drop-fifteen hidden-lg">
+					מסעדות</a></li>
+		</ul>
+		<ul class="footer-tablet-menu list-unstyled"></ul>
+	</div>
+</aside>				
+				<!-- Mobile menu -->
+								<div class="mobile_menu ">
+					<a class="navbar-toggle">
+						<div class="header_btn">
+							<span class="bit-1"></span>
+							<span class="bit-2"></span>
+							<span class="bit-3"></span>
+						</div>
+					</a>
+				</div>
+				
+			</nav>
+		</header>
+        <aside class="widget">
+	<div class="modal login-modal modal-all-design  fade popup-contact allPageModal" role="dialog"
+		 aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header login-head-block">
+					<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal"  aria-hidden="true">
+						<div class="close-x-btn"></div>
+					</button>
+					<h4 class="tite-login-modal">יצירת קשר </h4>
+				</div>
+				<div class="modal-body">
+					<form action="" method="post" class="customForm contact_us_form" enctype="multipart/form-data">
+						<p class="contact-text">נשמח לשמוע מכם בכל עניין שקשור להזמנה שביצעתם מכאן.
+לפניות בנושאים אחרים - היכנסו ל"צרו קשר" באתר מקדונלד'ס.</p>
+
+						<h5 class="contact-contacts">שם מלא:  </h5>
+						<input type="hidden" name="full_name" value=" ">
+
+						<h5 class="contact-contacts">טלפון: <span
+								class="number-contact"></span></h5>
+						<input type="hidden" name="phone" value="">
+						<div class="forms-login-modal">
+
+							<div class="main p1">
+								<div class="select selects-contacts">
+									<a href="#" class="slct slct1">בחירת נושא <span
+											class="transaroow"></span></a>
+									<ul class="drop drop1 subject_drop">
+																					<li data-id="3">משלוחים</li>
+																					<li data-id="5">מק דרייב</li>
+																					<li data-id="6">טייק אווי</li>
+																			</ul>
+									<input type="hidden" class="select" name="subject_id"/>
+								</div>
+							</div>
+
+							<div class="main p2">
+								<div class="select selects-contacts">
+									<a href="#" class="slct slct2 dised">בחירת תת נושא <span class="transaroow"></span></a>
+									<ul class="drop drop2 sub_subject_drop">
+																						<li data-id="3"
+													data-subject_id="3">אדיבות השירות</li>
+																								<li data-id="9"
+													data-subject_id="3">זמן הגעה</li>
+																								<li data-id="13"
+													data-subject_id="3">מוצרים</li>
+																								<li data-id="21"
+													data-subject_id="3">תשלום</li>
+																								<li data-id="22"
+													data-subject_id="5">מוצרים</li>
+																								<li data-id="23"
+													data-subject_id="5">אדיבות השירות</li>
+																								<li data-id="24"
+													data-subject_id="5">מהירות השירות</li>
+																								<li data-id="25"
+													data-subject_id="5">תשלום</li>
+																								<li data-id="26"
+													data-subject_id="6">מוצרים</li>
+																								<li data-id="27"
+													data-subject_id="6">אדיבות השירות</li>
+																								<li data-id="28"
+													data-subject_id="6">מהירות השירות</li>
+																								<li data-id="29"
+													data-subject_id="6">תשלום</li>
+																					</ul>
+									<input type="hidden" class="select2" name="sub_subject_id"/>
+								</div>
+							</div>
+
+							<div class="main p3 contact_select_branch">
+								<select name="contact_branch" class="js-select-branch select2-select-branch" style="width:100%;" disabled="disabled">
+									<option></option>
+									<option value="259">G כוכב הצפון</option><option value="265">GT סנטר נתיבות (כשר)</option><option value="264">MINI נווה רבין - אור יהודה (כשר)</option><option value="242">אום אל פאחם seven</option><option value="261">אונו מרקט</option><option value="91">אוניברסיטת תל אביב (כשר)</option><option value="246">אוריון ירושלים</option><option value="228">אושילנד כפר סבא</option><option value="173">אח"י אילת קרית חיים</option><option value="212">אייס מול - קומת הכניסה</option><option value="128">אלון השרון, משמר השרון</option><option value="14">אלונים</option><option value="140">אם המושבות, פתח-תקווה</option><option value="134">אם המפרץ</option><option value="108">ארנה הרצליה</option><option value="220">ארנה נהריה</option><option value="262">באקה we center</option><option value="239">ביג אילת (כשר)</option><option value="46">ביג באר שבע</option><option value="82">ביג בית שמש (כשר)</option><option value="257">ביג טבריה - פוריה (כשר)</option><option value="272">ביג יהוד</option><option value="245">ביג יקנעם (כשר)</option><option value="243">ביג ירכא</option><option value="218">ביג פאשן, אשדוד</option><option value="206">ביג פאשן, טבריה (כשר)</option><option value="163">ביג פאשן, נצרת</option><option value="189">ביג פרדס חנה</option><option value="224">ביג צ’ק פוסט</option><option value="149">ביג קסטינה</option><option value="186">ביג קריית שמונה</option><option value="95">ביג רגבה</option><option value="147">ביה"ח אסף הרופא (כשר)</option><option value="136">ביה"ח בילינסון (כשר)</option><option value="167">ביה"ח מאיר, כפר סבא (כשר)</option><option value="117">ביה"ח רמבם (כשר)</option><option value="143">ביה"ח תל השומר (כשר)</option><option value="225">ביזנס פארק חולון (כשר)</option><option value="200">בילו סנטר</option><option value="131">בית הכרם, ירושלים (כשר)</option><option value="174">בית קמה</option><option value="240">בית קמה בתחנת פז (כשר)</option><option value="275">בענה - דיר אל אסד, דבאח מול</option><option value="236">גלובוס סנטר, אשקלון</option><option value="219">גן יבנה</option><option value="29">גן שמואל</option><option value="204">גרנד באר שבע (כשר)</option><option value="71">גרנד קניון - קומה 1</option><option value="271">גרנד קניון מתחם המסעדות קומה 3</option><option value="144">דודג’ סנטר, נוף הגליל (נצרת עילית)</option><option value="207">דוידי סנטר, אשקלון</option><option value="238">דור מעלות</option><option value="213">דור ראשונים, ראשל"צ</option><option value="270">דושי סנטר</option><option value="13">דיזנגוף סנטר</option><option value="139">דימונה - פרץ סנטר (כשר)</option><option value="138">דלית אל כרמל</option><option value="59">דלק אולגה</option><option value="79">הדר חיפה</option><option value="145">המושבה גדרה (כשר)</option><option value="151">הסיבים, פתח-תקווה</option><option value="72">הקניון הגדול, פתח-תקווה</option><option value="155">הקניון הגדול, פתח-תקווה (כשר)</option><option value="122">הר יונה, נוף הגליל (נצרת עילית)</option><option value="15">הרצליה צומת הסירה</option><option value="107">וולפסון חולון</option><option value="10">וולקן - חוצות המפרץ</option><option value="159">חוצות כרמיאל</option><option value="74">חצרות יפו</option><option value="26">טיילת תל אביב</option><option value="280">טירה</option><option value="256">טרמינל 3 אולם כניסה (כשר)</option><option value="229">יס פלאנט באר שבע</option><option value="223">יס פלאנט ירושלים</option><option value="194">יס פלאנט, ראשל"צ</option><option value="205">ישפרו מודיעין</option><option value="249">ישפרו נס ציונה</option><option value="164">כוכב יאיר</option><option value="190">כפר גנים, פתח-תקווה (כשר)</option><option value="86">כפר נין</option><option value="177">כפר סבא G - קומה 2 (כשר)</option><option value="162">כפר סבא G - קומת קרקע</option><option value="222">כפר תבור</option><option value="54">כרמיאל - תחנת דלק סונול</option><option value="103">כרמיאל מרכז</option><option value="221">לה פארק חולון</option><option value="12">לונדון מיניסטור, תל אביב</option><option value="83">מגדלי תל אביב</option><option value="209">מדרחוב בן יהודה, ירושלים (כשר)</option><option value="112">מדרחוב רוטשילד - הבאר, ראשל"צ</option><option value="241">מול החוף חדרה</option><option value="111">מול הפארק, רעננה</option><option value="235">מול זכרון</option><option value="193">מונד סנטר, תל מונד (כשר)</option><option value="96">מיקדו סנטר, תל ברוך</option><option value="260">מצפה רמון</option><option value="509">מק גלידה אייס מול</option><option value="508">מק גלידה מלכת שבא</option><option value="504">מק גלידה סינמה סיטי ראשל"צ</option><option value="503">מק גלידה קניון האופנה TLV ת"א</option><option value="502">מק גלידה קניון הזהב</option><option value="505">מק גלידה קניון חיפה</option><option value="507">מק גלידה קניון קרית אונו</option><option value="196">מק גלידה קניון רחובות</option><option value="506">מק גלידה שבעת הכוכבים</option><option value="266">מרינה אשקלון</option><option value="146">מרכז One, באר שבע</option><option value="104">מרכז ויצמן - איכילוב, תל אביב</option><option value="150">מרכז ויצמן, רחובות</option><option value="61">מתחם הבורסה, רמת-גן (כשר)</option><option value="267">מתחם כורדני</option><option value="45">נוף הגליל (נצרת עילית) - תחנת דלק רוזנפלד</option><option value="203">נמל תל אביב</option><option value="211">נצרת כנסיית הבשורה</option><option value="255">נתב"ג טרמינל 3 דיוטי פרי (כשר)</option><option value="76">סביון סנטר, נווה סביון</option><option value="185">סונול דנה, ראשל"צ</option><option value="195">סונול כפר יונה</option><option value="152">סטאר סנטר המתחם החדש (כשר)</option><option value="130">סטאר סנטר, אשדוד</option><option value="63">סיטי סנטר, חיפה</option><option value="160">סיטי פולג</option><option value="269">סימול אשדוד</option><option value="253">סינמה סיטי באר שבע</option><option value="99">סינמה סיטי גלילות</option><option value="278">סינמה סיטי חדרה</option><option value="258">סינמה סיטי נתניה</option><option value="169">סינמה סיטי ראשל"צ</option><option value="210">סינמה סיטי, ירושלים (כשר)</option><option value="17">סינמול חיפה - מתחם המסעדות (כשר)</option><option value="182">סינמול חיפה - קומת בתי הקולנוע</option><option value="154">סכנין</option><option value="170">עבדת</option><option value="277">עד הלום</option><option value="217">עזריאלי רמלה (כשר)</option><option value="124">עין יהב</option><option value="248">עמיעד</option><option value="250">עמק סנטר</option><option value="165">עפולה - תחנת דלק יוקלר</option><option value="62">פארק הצפון - מעיין ברוך</option><option value="100">פטרה ים המלח</option><option value="263">פיאנו עיר ימים (כשר)</option><option value="80">פינס, פתח-תקווה (כשר)</option><option value="90">פרדסיה</option><option value="7">צומת גולני</option><option value="125">צומת מגידו</option><option value="214">צומת פורדיס</option><option value="199">צומת צמח</option><option value="66">צומת ראם - מסמיה</option><option value="60">צומת שוקת</option><option value="105">צומת שורש - שואבה</option><option value="234">צים אורבן בית שאן (כשר)</option><option value="244">צים אורבן ערד</option><option value="226">קניון G יבנה (כשר)</option><option value="24">קניון G יקנעם</option><option value="75">קניון M הדרך, בית חירות</option><option value="247">קניון MORE חריש</option><option value="9">קניון אורות, אור עקיבא (כשר)</option><option value="129">קניון אילון - מתחם הקולנוע</option><option value="1">קניון אילון - קומת הכניסה</option><option value="73">קניון ביאליק רמת-גן (כשר)</option><option value="43">קניון בת ים (כשר)</option><option value="135">קניון גבעתיים - קומת הקולנוע</option><option value="123">קניון גירון, אשקלון (כשר)</option><option value="276">קניון דמרי סנטר דימונה (כשר)</option><option value="233">קניון האופנה TLV ת"א</option><option value="197">קניון הבאר, ראשל"צ (כשר)</option><option value="157">קניון הגבעה, גבעת שמואל (כשר)</option><option value="201">קניון הזהב - מתחם המסעדות החדש</option><option value="2">קניון הזהב, ראשל"צ</option><option value="40">קניון הסיטי אשדוד</option><option value="53">קניון השלום עזריאלי</option><option value="49">קניון חיפה</option><option value="252">קניון ים המלח (כשר)</option><option value="184">קניון כפיר, קרית אתא (כשר)</option><option value="216">קניון כפר סבא הירוקה</option><option value="120">קניון לב העיר, קרית גת (כשר)</option><option value="175">קניון לב חדרה (כשר)</option><option value="230">קניון מבשרת (כשר)</option><option value="38">קניון מול הים, אילת</option><option value="178">קניון מלחה (כשר)</option><option value="281">קניון מלכת שבא</option><option value="231">קניון עזריאלי הנגב (כשר)</option><option value="251">קניון עזריאלי חולון (כשר)</option><option value="232">קניון עזריאלי ראשונים</option><option value="156">קניון עזריאלי, מודיעין (כשר)</option><option value="183">קניון עזריאלי, עכו</option><option value="188">קניון עיר ימים, נתניה (כשר)</option><option value="127">קניון ערים, כפר סבא</option><option value="94">קניון קרית-אונו</option><option value="28">קניון רחובות</option><option value="47">קניון רמת אביב (כשר)</option><option value="89">קניון רננים (כשר)</option><option value="142">קניון שבעת הכוכבים</option><option value="35">קניון שמונה באמצע (כשר)</option><option value="215">קניון שער הצפון - איקאה (כשר)</option><option value="52">קניון שער ראשון</option><option value="172">קניון שרונים</option><option value="158">קריון - מתחם בתי הקולנוע</option><option value="78">קריון - מתחם המסעדות</option><option value="202">קריית השרון (כשר)</option><option value="84">קרית רבין, חולון</option><option value="98">ראש העין לב אפק (כשר)</option><option value="227">רוגובין יבנה</option><option value="166">רוטשילד, תל אביב</option><option value="5">רמת אביב גימל</option><option value="56">רמת השרון</option><option value="51">רמת פולג, נתניה</option><option value="34">שוהם (כשר)</option><option value="274">שער פלמר</option><option value="126">שערי חדרה</option><option value="55">שפיים</option><option value="273">שפיר סנטר</option><option value="237">שרונה ת"א</option><option value="50">תחנה מרכזית באר שבע (כשר)</option><option value="180">תחנה מרכזית טבריה (כשר)</option><option value="19">תחנה מרכזית נתניה</option><option value="268">תחנה מרכזית עפולה (כשר)</option><option value="3">תחנה מרכזית תל אביב</option><option value="119">תל חנן (כשר)</option><option value="37">תמרה</option>								</select>
+								<input type="hidden" class="select3" name="branch_id" />
+<!--								<div class="select selects-contacts contact_select_branch">-->
+<!--									<a href="#" class="slct slct3 dised">--><!-- <span-->
+<!--											class="transaroow"></span></a>-->
+<!--									<ul class="drop drop3 restaurants_list_contact">-->
+<!--										--><!--											<li data-id="--><!--" class="restaurant-item_contact" data-sort="--><!--" data-lat="--><!--" data-lng="--><!--">--><!--</li>-->
+<!--										--><!--									</ul>-->
+<!--									<input type="hidden" class="select3" name="branch_id"/>-->
+<!--								</div>-->
+							</div>
+
+							<textarea required placeholder="הערות" class="textaea-contact p4" name="content"></textarea>
+
+														<span id="span-file-upload">העלאת קובץ:</span>
+
+								                            <input id="fileInputPopup" type="file" name="attachment" class="js-contact-attachment new-input-file " accept=".jpg,.png,.gif,.pdf,.HEIC" />
+								                            <label class="new-input-file-label" for="fileInputPopup">
+									                            בחירת תמונה								                            </label>
+
+							<button
+								class="popup-additional-submit contactButton disable-contact focus-efect">שלח</button>
+
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>
+<script type="text/javascript">
+    $("#fileInputPopup").change(function(){
+        var fieldVal = $(this).val();
+        var fileBtn = $('.new-input-file-label');
+        if (fieldVal !== "") {
+            fileBtn.html(fieldVal.substr(12));
+            fileBtn.css({'background-color' : '#26461C', 'color':'white'});
+        }else{
+            fileBtn.html('בחר קובץ');
+            fileBtn.css({'background-color' : 'white', 'color':'#26461C'});
+
+        }
+    });
+</script>
+
+<div class="page-content-wrap">
+
+	<div class="head-menu">
+	</div>
+
+	<!-- start of page -->
+	<div class="content-wrap home-page">
+		<div class="content">
+
+			<!-- Sidebar -->
+			<div class="container">
+				<div class="sidebar">
+					<aside class="widget box-order-site order-story-box">
+	<div class="booking-site">
+		<figure>
+			<img alt="booking-image" class="logo-tublet" src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/newLogo_tablet.svg"/>
+			<img alt="booking-image" class="mini-logo" src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/newLogo_desktop.svg"/>
+		</figure>
+		<h4 class="booking-title">אתר ההזמנות</h4>
+	</div>
+
+		<ul class="nav nav-tabs">
+		<li class="in active tub-stele-order delivery focus-efect">
+			<a data-toggle="tab" href="#panel1" class="tub-box-style js-order-panel-delivery"
+			   data-show-address-upgrade-message="0">
+				<i class="icon-tub-moto"></i>
+				<span class="nav-tab-header">משלוח עד הבית</span>
+			</a>
+		</li>
+		<li class=" tub-stele-order focus-efect">
+			<a data-toggle="tab" href="#panel2" class="tub-box-style js-order-panel-restaurant">
+				<i class="icon-tub-rest"></i>
+				<span class="nav-tab-header">מגיעים למסעדה</span>
+			</a>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<div id="panel1" class="tab-pane fade in active box-order-tubs order-tub-right panel1">
+			
+<div class="new-address-container">
+    <h4 class="tite-tab-cont-box">מינימום כולל דמי משלוח (לא כולל טיפ): 90 ₪</h4>
+    
+<!--import the _media/js/website/new-address/new_address.js file -->
+<script type="text/javascript">
+    const approve_location_text =  'המיקום הנוכחי לא זמין.';
+    const autocomplete_max_results = 3; // by default its 5.
+</script>
+
+<div class="address-search-input-wrapper">
+    <input type="text" autocomplete="off" id="google-autocomplete" class="search-input" placeholder="חיפוש כתובת (רחוב, מספר, עיר)"/>
+    <img class="magnifying-glass" src="https://newcdnmedia.mcdonalds.co.il/_media/images/new_address/magnifying-glass.svg" alt=""/>
+    <img class="clear-x js-clear-x hide" src="https://newcdnmedia.mcdonalds.co.il/_media/images/general/x.svg" alt=""/>
+    <img class="submit-address js-submit-address" src="https://newcdnmedia.mcdonalds.co.il/_media/images/new_address/address-submit.svg" alt=""/>
+    <div class="google-dropdown hide"></div>
+    <span class="err-msg">יש להזין עיר רחוב ומספר</span>
+    <div id="map"></div>
+</div>
+
+<div class="extra-methods">
+<!--    <a class="method-container js-select-from-map" href="/מפת_כתובת">
+        <img src="/_media/images/new_address/flag.svg" alt=""/>
+        <span class="method-title"></span>
+    </a>-->
+    <div class="method-container js-select-current-location">
+        <img src="https://newcdnmedia.mcdonalds.co.il/_media/images/new_address/navigation-arrow.svg" alt=""/>
+        <span class="method-title">מיקום נוכחי</span>
+    </div>
+</div>
+
+<script>
+    var media_path_addrees = `https://newcdnmedia.mcdonalds.co.il`;
+</script>
+<script type="text/javascript">
+    $(document).ready(function (){
+        if (!window.initMap) {
+            var cities_with_no_streets = JSON.parse(`null`);
+            var selected_address = null;
+            const map_config = {
+                drop_element: $('.google-dropdown'),
+                onSelect: handleAddressSelect,
+                cities_with_no_streets: cities_with_no_streets,
+            };
+
+            var autocompleteManager = new GoogleAutocompleteManager(map_config);
+
+            function handleAddressSelect(address_obj) {
+                selected_address = address_obj;
+            }
+        }
+    });
+</script>
+</div>
+
+<!--<script type="text/javascript">-->
+<!--    //var cities_with_no_streets = JSON.parse(`--><!--//`);-->
+<!--    //var selected_address = null;-->
+<!--    //const config = {-->
+<!--    //    drop_element: $('.google-dropdown'),-->
+<!--    //    onSelect: handleAddressSelect,-->
+<!--    //    cities_with_no_streets: cities_with_no_streets,-->
+<!--    //};-->
+<!--    //-->
+<!--    //var autocompleteManager = new GoogleAutocompleteManager(config);-->
+<!--    //-->
+<!--    //function handleAddressSelect(address_obj) {-->
+<!--    //    selected_address = address_obj;-->
+<!--    //}-->
+<!--</script>-->
+<div class="homepage-low-btns-wrapper">
+	<button type="button" class="but-boxorder-green homepage-low-btn" onclick="go_to_url('McCoins'); desktop_loader(1);">
+		<i class="icon-tub-mccoins">
+			<img alt="/" class="after-image-mccoins" src="https://newcdnmedia.mcdonalds.co.il/_media/images/mcmoney/mcoins-icon.svg"">
+		</i>McCoins	</button>
+	<button type="button" class="but-boxorder-coupon homepage-low-btn js-home-coupon-btn">
+		<i class="icon-tub-coupon">
+			<img alt="/" class="after-image-coupon" src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/style-box-order/coupon.svg"">
+		</i>יש לי קופון	</button>
+</div>
+		</div>
+		<div id="panel2" class="tab-pane fade  box-order-tubs order-tub-right panel2">
+
+			<h4 class="tite-tab-cont-box ">בחרו ממסעדות קודמות</h4>
+			<form class="forms-box-order">
+								<div class="form-group left">
+					<div class="checkbox checkbox-box-order trans" style="text-align: right; padding-right: 13px;">
+						<label>
+							<input type="checkbox" class='check i_solider' value="">
+							<span class="checkbx-text">חייל/ת במדים</span>
+						</label>
+					</div>
+				</div>
+
+								<button type="button" class="but-boxorder-yellow new_pickup_order">
+					<i class="icon-tub-con fixIcon2"></i>
+					בחרו מסעדה				</button>
+
+				<div class="homepage-low-btns-wrapper">
+	<button type="button" class="but-boxorder-green homepage-low-btn" onclick="go_to_url('McCoins'); desktop_loader(1);">
+		<i class="icon-tub-mccoins">
+			<img alt="/" class="after-image-mccoins" src="https://newcdnmedia.mcdonalds.co.il/_media/images/mcmoney/mcoins-icon.svg"">
+		</i>McCoins	</button>
+	<button type="button" class="but-boxorder-coupon homepage-low-btn js-home-coupon-btn">
+		<i class="icon-tub-coupon">
+			<img alt="/" class="after-image-coupon" src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/style-box-order/coupon.svg"">
+		</i>יש לי קופון	</button>
+</div>
+			</form>
+		</div>
+	</div>
+</aside>
+				</div>
+			</div>
+			<!-- End Sidebar -->
+
+			<!-- Slider -->
+			<div id="carousel-example-generic" class="carousel slide slide-home hidden-xs" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					
+						<div class="item home-page-item active" style="cursor: default;"
+						     data-image-path="https://newcdnmedia.mcdonalds.co.il/_media/media/60/14357.jpg?t=1649851985"
+						     data-background-color="#532a78"
+						     data-id="0"
+						     data-external="0"
+						     data-url="">
+							<div class="slide-img slide-img-desc"
+							     style="background-image: url('https://newcdnmedia.mcdonalds.co.il/_media/media/60/14358.jpg?t=1649851969');"></div>
+							<div class="slide-tablet slide-img-tablet"
+							     style="background-image: url('https://newcdnmedia.mcdonalds.co.il/_media/media/60/14338.jpg?t=1649793704');"></div>
+						</div>
+						
+						<div class="item home-page-item " style="cursor: default;"
+						     data-image-path="https://newcdnmedia.mcdonalds.co.il/_media/media/60/14329.jpg?t=1649880251"
+						     data-background-color="#532a78"
+						     data-id="0"
+						     data-external="0"
+						     data-url="">
+							<div class="slide-img slide-img-desc"
+							     style="background-image: url('https://newcdnmedia.mcdonalds.co.il/_media/media/60/14326.jpg?t=1649880219');"></div>
+							<div class="slide-tablet slide-img-tablet"
+							     style="background-image: url('https://newcdnmedia.mcdonalds.co.il/_media/media/60/14325.jpg?t=1649880234');"></div>
+						</div>
+						
+						<div class="item home-page-item " style="cursor: default;"
+						     data-image-path="https://newcdnmedia.mcdonalds.co.il/_media/media/60/14331.jpg?t=1649793561"
+						     data-background-color="#532a78"
+						     data-id="0"
+						     data-external="0"
+						     data-url="">
+							<div class="slide-img slide-img-desc"
+							     style="background-image: url('https://newcdnmedia.mcdonalds.co.il/_media/media/60/14336.jpg?t=1649851847');"></div>
+							<div class="slide-tablet slide-img-tablet"
+							     style="background-image: url('https://newcdnmedia.mcdonalds.co.il/_media/media/60/14334.jpg?t=1649851827');"></div>
+						</div>
+						
+				</div>
+			</div>
+			<!--End Slider -->
+			<div>
+				
+<style type="text/css">
+    @media (max-width: 768px) {
+        .get-dinner.login-modal.modal .svg_close_btn_wrapper {
+            left: 5px;
+        }
+    }
+</style>
+
+<aside class="widget">
+	<section class="modal login-modal fade get-dinner" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header login-head-block">
+					<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal"  aria-hidden="true">
+						<div class="close-x-btn"></div>
+					</button>
+					<h4 class="tite-login-modal">איך תרצו לקבל את הארוחה?</h4>
+				</div>
+				<div class="modal-body clearfix body-get-dinner order-method">
+
+				</div>
+			</div>
+		</div>
+	</section>
+</aside><aside class="widget">
+    <div class="modal fade modal-all-design popup-restaurant-pickup-soliders popup-soldiers-benefit popup-restaurant-shown"
+         data-backdrop="static"
+         tabindex="-1"
+         role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-image: url(https://newcdnmedia.mcdonalds.co.il/_media/media/19/13997.jpg?t=1647254223)">
+<!--                <img src="--><!--" class="soldier-background-image" />-->
+                <div class="modal-header login-head-block">
+                    <button type="button" class="close cross-close i_not_soldier" data-dismiss="modal"
+                            aria-hidden="true">
+                        <span class="clsen-segment"></span>
+                        <span class="clsen-segment revers-segment"></span>
+                    </button>
+                    <h4 class="tite-login-modal">
+                        חייל/ת!                        <br>
+                        <br>
+
+                        <!--						-->                    </h4>
+                </div>
+                <div class="soldiers-content">
+                    <!--		    		<img class="text-image-upsale" src="_media/images/website/to-modal-soldiers/burger-soldiers.png" alt="">-->
+                    <p class="text-soldiers">כדי לקבל הנחת חייל/ת, צריך לבוא במדים לדלפק לאחר סיום ההזמנה והתשלום</p>
+
+                    <div class="soldier-btns-wrapper">
+                        <a href="#"
+                           class="general-approval-button grey-hover-efect focus-efect grey-buttons-soldiers i_not_soldier"
+                           data-dismiss="modal">לא במדים </a>
+                        <a href="#"
+                           class="general-approval-button focus-efect my-plate-left-but ellow-buttons-soldiers yes_i_soldier"
+                           data-dismiss="modal">במדים</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside><aside class="widget">
+	<div class="modal modal-all-design fade coupone-code"  tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header login-head-block">
+					<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal"  aria-hidden="true">
+						<div class="close-x-btn"></div>
+					</button>
+					<h4 class="title-coupon">יש לך קוד קופון?</h4>
+				</div>
+				<div class="modal-body">
+					<form class="forms-coupon" name="set_coupon" novalidate>
+						<input class="input-coupon" name="code" required type="text" placeholder="הכנסת קוד קופון">
+<!--						<button type="reset" class="button-coupon red-coupon focus-efect" data-dismiss="modal" >--><!--</button>-->
+						<button type="submit"  class="button-coupon green-coupon focus-efect">אישור</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside><aside class="widget add-time-slot-widget clearfix">
+	<div class="modal modal-all-design modal-mobile add-time-slot-popup fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog add-time-slot-modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header login-head-block">
+					<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+						<div class="close-x-btn"></div>
+					</button>
+					<h4 class="tite-login-modal">מתי תרצו שנגיע?</h4>
+					<h4 class="sub-title-login-modal">אנו נגיע בטווח של 15 דקות מהזמן שבחרתם</h4>
+				</div>
+				<div class="main-content-wrapper">
+					<div class="time-slots-scooter-image-wrapper">
+						<img class="scooter-image"
+						     src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/future_delivery/future-delivery-scooter.png" alt="">
+					</div>
+					<div class="time-slots-wrapper">
+
+					</div>
+					<div class="add-time-slot-btn-wrapper">
+						<button disabled="disabled"
+						        class="save-time-slot-btn">המשך</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>			</div>
+
+		</div>
+	</div>
+
+
+	<!-- end of page -->
+
+</div>
+
+<aside class="widget">
+		<div class="modal login-modal  modal-all-design fade popup-signup allPageModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+			    <div class="modal-content">
+				    <div class="modal-header login-head-block">
+					    <button type="button" class="svg_close_btn_wrapper hidden-xs" data-dismiss="modal" aria-hidden="true">
+							<div class="close-x-btn"></div>
+						</button>
+				        <h4 class="tite-login-modal">רישום קצר</h4>
+				    </div>
+				    <div class="modal-body clearfix">
+						<button class="signup-up-button loginModalShow"><i class="sign-up-ico"></i>לקוחות קיימים?</button>
+				    	<form class="form-signup" name="form_signup" novalidate>
+
+							<!-- <input class="input-signup checkSignUp nonNumeric" name="first_name" required type="text" pattern="[^0-9 \f\n\r\t\v]{2,}" placeholder="שם פרטי" class="credit-input"> -->
+							<input class="input-signup input_first_name checkSignUp nonNumeric" name="first_name" required type="text" pattern="[\u0591-\u05F4\sa-zA-z ']{2,}" placeholder="שם פרטי" class="credit-input">
+						    <!--<input class="input-signup checkSignUp nonNumeric" name="last_name" required type="text" pattern="[^0-9 \f\n\r\t\v]{2,}" placeholder="שם משפחה" class="credit-input">-->
+							<input class="input-signup input_last_name checkSignUp nonNumeric" name="last_name" required type="text" pattern="[\u0591-\u05F4\sa-zA-z ']{2,}" placeholder="שם משפחה" class="credit-input">
+						    <input class="input-signup checkSignUp onlyNumeric" name="phone" required type="tel" pattern="^(?:(0(?:50|51|52|53|54|55|57|58|72|73|74|76|77|78)[-]?[0-9]{7}))$" placeholder="טלפון נייד" class="credit-input">
+						    <input class="input-signup checkSignUp" required name="email" type="email" placeholder='דוא"ל' class="credit-input">
+						    <!--<input class="input-signup checkSignUp onlyNumeric" name="password" required type="password" pattern="[0-9]{4,}" placeholder="סיסמא (לפחות 4 תווים)" class="credit-input">-->
+						    <input class="input-signup checkSignUp password" name="password" required type="password" pattern="^([a-zA-Z0-9]{4,12})$" placeholder="סיסמה - לפחות 5 תווים" class="credit-input">
+						    <input class="input-signup checkSignUp password confirmPassword" name="password_confirm" required type="password" pattern="^([a-zA-Z0-9]{4,12})$" placeholder="אימות סיסמה" class="credit-input">
+
+							<div class="form-group">
+			                  <div class="checkbox checkbox-box-order signup-checkbox">
+<!-- 			                    <label class="chekcbox-frame">
+			                      <input type="checkbox" value="">
+			                      <span class="checkbx-text">אני לקוח <span class="eng-text">LifeStyle</span></span>
+			                    </label>
+
+		                    	<label class="chekcbox-frame">
+			                      <input type="checkbox" class="checkSignUp" value="" required>
+			                      <span class="checkbx-text">אני חבר מועדון</span>
+			                    </label>
+		                    	 -->
+		                    	<label class="chekcbox-frame">
+			                      <input type="checkbox" name="newsletter" checked class="checkSignUp" value="1">
+			                      <span class="checkbx-text">אישור תוכן שיווקי במייל/מסרון/פוש</span>
+			                    </label>
+
+		                    	<label class="chekcbox-frame">
+			                      <input type="checkbox" name="terms" id="terms_checkbox" class="checkSignUp " value="" required>
+				                    <span class="checkbx-text">
+										אני מאשר/ת <a href="javascript:close_top_menu();" class="legal-agrement-show modalShowFunction" data-modal="popup-terms">תנאי שימוש</a> 										<!--
+										<a href="/" target="_blank" class="legal-agrement-show">תנאי שימוש
+				                        </a>-->
+				                    </span>
+			                    </label>
+			                  </div>
+			                </div>
+
+							<button class="popap-signup-submit SubmSignUp disedSubmSignUp disabled" type="submit"><i class="icon-signup-end"></i>המשך</button>
+					    </form>
+				    </div>
+				</div>
+			</div>
+		</div>
+</aside><div class="modal modal-all-design fade verification-code"  tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		       <div class="modal-header login-head-block">
+				   <button type="button" class="svg_close_btn_wrapper .cross-close" data-dismiss="modal"  aria-hidden="true">
+					   <div class="close-x-btn"></div>
+				   </button>
+			        <h4 class="title-coupon">שימו לב</h4>
+			    </div>
+			    <div class="modal-body">
+			        <div class="forms-coupon">
+				        <h4 class="title-virifacation">קוד אימות יישלח ב-SMS לטלפון <span class="phone-number"></span>
+					           בקרוב. בבקשה לאשר משלוח למספר זה.				        </h4>
+                        <div class="buttons-verificatio-wrapper">
+                            <button class="send-form button-coupon green-coupon focus-efect">שלח <span class="eng-text">SMS</span></button>
+                            <button class="fix-phone button-coupon red-coupon focus-efect">תיקון מספר טלפון</button>
+                        </div>
+					</div>
+			    </div>
+		  </div>
+		  
+		</div>
+	</div>
+</aside><div class="modal modal-all-design fade input-verification-code"  tabindex="-1" role="dialog" data-backdrop="static" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	       <div class="modal-header login-head-block">
+		        <button type="button" class="close cross-close" data-dismiss="modal"  aria-hidden="true">
+			        <span class="clsen-segment"></span>
+			        <span class="clsen-segment revers-segment"></span>
+		        </button>
+		        <h4 class="title-coupon">עוד רגע יישלח אליך קוד אימות ב-SMS</h4>
+		    </div>
+		    <div class="modal-body">
+		        <div class="forms-coupon">
+			        <h4 class="title-virifacation">
+				        עוד רגע יישלח אליך קוד אימות ב-SMS				        <input class="input-login" name="pin_code" type="text" required placeholder='קוד אימות '>
+				        <input type="hidden" name="password" class="password"/>
+				        <input type="hidden" name="email" class="email"/>
+			        </h4>
+                    <div class="buttons-verificatio-wrapper">
+                        <button class="confirm-register button-coupon green-coupon focus-efect">המשך</button>
+                        <button class="button-coupon red-coupon focus-efect"
+                                data-dismiss="modal">חזור</button>
+                    </div>
+				</div>
+		    </div>
+	    </div>
+
+	</div>
+</div>
+<div class="modal modal-all-design fade meal-cards-verification-code"  tabindex="-1" role="dialog" data-backdrop="static" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	       <div class="modal-header login-head-block">
+		        <button type="button" class="close cross-close" data-dismiss="modal"  aria-hidden="true">
+			        <span class="clsen-segment"></span>
+			        <span class="clsen-segment revers-segment"></span>
+		        </button>
+		        <h4 class="title-coupon">עוד רגע יישלח אליך קוד אימות ב-SMS</h4>
+		    </div>
+		    <div class="modal-body">
+		        <div class="forms-coupon">
+			        <h4 class="title-virifacation">
+				        עוד רגע יישלח אליך קוד אימות ב-SMS				        <input class="card_id" type="hidden" />
+				        <input class="card_type_id" type="hidden" />
+				        <input class="input-login" name="pin_code" type="text" required placeholder='קוד אימות '>
+			        </h4>
+					<button class="confirm-meal-card button-coupon green-coupon focus-efect">המשך</button>
+					<button class="button-coupon red-coupon focus-efect" data-dismiss="modal">חזור</button>
+				</div>
+		    </div>
+	    </div>
+
+	</div>
+</div>
+<div class="modal modal-all-design fade tfa-verification-code"  tabindex="-1" role="dialog" data-backdrop="static" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	       <div class="modal-header login-head-block">
+		        <button type="button" class="close cross-close" data-dismiss="modal"  aria-hidden="true">
+			        <span class="clsen-segment"></span>
+			        <span class="clsen-segment revers-segment"></span>
+		        </button>
+		        <h4 class="title-coupon">קוד אימות ב-SMS</h4>
+		    </div>
+		    <div class="modal-body">
+		        <div class="forms-coupon">
+			        <h4 class="title-virifacation">
+				        עוד רגע ישלח אליך קוד אימות ב-SMS למספר <span class="tfa-cellphone">[cellphone]</span>                    </h4>
+                    <div class="title-virifacation">
+                        <input class="input-login" name="pin_code" type="number" pattern="[0-9]*" required placeholder='בבקשה להקליד קוד'/>
+                    </div>
+                    <div class="buttons-verificatio-wrapper">
+                        <button class="confirm-register button-coupon green-coupon focus-efect">המשך</button>
+                        <button class="button-coupon red-coupon focus-efect"
+                                data-dismiss="modal">חזור</button>
+                    </div>
+				</div>
+		    </div>
+	    </div>
+
+	</div>
+</div>
+<aside class="widget">
+		<div class="modal login-modal fade popup-login-existing reset-text"  tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		       <div class="modal-header login-head-block">
+			    	<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal"  aria-hidden="true">
+						<div class="close-x-btn"></div>
+			    	</button>
+			        <h4 class="tite-login-modal">כיף שחזרת!</h4>
+			    </div>
+			    <div class="modal-body">
+			        <form class="forms-login-modal" name="login-form">
+						<input class="input-login" name="email" type="email" required placeholder='דוא"ל'>
+						<input class="input-login" name="password" type="password" required placeholder="סיסמה">
+				        
+        <input type="hidden" name="_token" value="UtrGDOpgS7nTJAp3MAe9Ol6pVJpSLZRmfilZMoOSIobogapldtB4PW4GiYkmbwtiKMlucO8i3e0Nnd"/>
+    
+				        <div class="checkbox checkbox-box-order signup-checkbox">
+					        <label class="chekcbox-frame">
+						        <input type="checkbox" name="remember_me" checked class="" value="1">
+						        <span class="checkbx-text">זכור אותי?</span>
+					        </label>
+				        </div>
+						<button class="but-boxorder focus-efect"><i class="icon-tub-con"></i>תחבר אותי!</button>
+						<a href="#" class="existing-linck" onclick="open_restore_password_popup()">שכחתי סיסמה</a>
+			        </form>
+				    <button class="but-boxorder-sign-up focus-efect modalShowFunction" data-modal="popup-signup" onclick="closePopup('login-modal')">לקוחות חדשים?</button>
+			    </div>
+		  </div>
+		</div>
+	</div>
+</aside>
+<script>
+    const login_types = JSON.parse(`{"1":{"id":"1","title":"facebook"},"0":{"id":"0","title":"email"},"3":{"id":"3","title":"apple"},"2":{"id":"2","title":"google"}}`);
+    const media_path = `https://newcdnmedia.mcdonalds.co.il`;
+
+    const registration_success_msg = `הרשמה הסתיימה בהצלחה!`;
+    const login_success_msg = `כיף שחזרת :)`;
+</script>
+
+<link rel="stylesheet" href="https://newcdnmedia.mcdonalds.co.il/_media/css/website/popups/new-login-popup.css">
+<aside class="widget">
+    <div class="modal login-modal fade popup-new-login new-login reset-text"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="base-step js-base-step">
+    <div class="top-wrapper">
+        <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+            <div class="close-x-btn"></div>
+        </button>
+        <div class="top">
+            <img class="background-image" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/yellow-background-right.svg"
+                 alt=""/>
+            <div class="overly">
+                <h3 class="title">רעבים?</h3>
+                <h4 class="sub-title">התחברו או הרשמו למקדונלד׳ס
+בקלות ובמהירות :)</h4>
+                <form class="forms-login-modal" name="login-form">
+                    <input class="input-login js-email-input" name="email" type="email" required placeholder='כתובת מייל'>
+                    <img class="input-submit js-email-submit"
+                         src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/input-submit.svg" alt=""/>
+                    <span class="err-msg hide">כתובת המייל אינה תקינה</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-wrapper">
+        <div class="bottom">
+                        <div class="icons-wrapper">
+
+                                                            </div>
+            <img class="bottom-image" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/mc-meal.png" alt=""/>
+        </div>
+    </div>
+</div>
+                
+<div class="code-validation-step js-code-validation-step">
+    <div class="top-wrapper">
+        <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+            <div class="close-x-btn"></div>
+        </button>
+        <div class="top">
+            <img class="background-image" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/yellow-bg-validation.png" alt=""/>
+            <div class="overly">
+                <h3 class="pre-title">היי,</h3>
+                <h3 class="title">Rotemm</h3>
+                <h4 class="sub-title"></h4>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-wrapper">
+        <div class="bottom">
+            <div class="input-wrapper">
+                <input type="number" class="input js-validation-input"/>
+                <span class="err-msg hide">קוד אימות לא תקין</span>
+            </div>
+
+            <div class="desktop-input-wrapper">
+                <input type="number" pattern="\d*" class="desktop-input js-validation-input" tabindex="1"/>
+                <input type="number" pattern="\d*" class="desktop-input js-validation-input" tabindex="2"/>
+                <input type="number" pattern="\d*" class="desktop-input js-validation-input" tabindex="3"/>
+                <input type="number" pattern="\d*" class="desktop-input js-validation-input" tabindex="4"/>
+                <input type="number" pattern="\d*" class="desktop-input js-validation-input" tabindex="5"/>
+                <input type="number" pattern="\d*" class="desktop-input js-validation-input" tabindex="6"/>
+                <span class="err-msg hide">קוד אימות לא תקין</span>
+            </div>
+
+            <div class="send-again js-send-again">לא קיבלתי קוד</div>
+
+            <img class="desktop-img" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/mc-drink-paper.png" alt=""/>
+
+            <button class="js-next submit-btn">המשך</button>
+        </div>
+    </div>
+</div>
+                <div class="get-phone-step js-get-phone-step">
+    <div class="top-wrapper">
+        <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+            <div class="close-x-btn"></div>
+        </button>
+        <div class="top">
+            <img class="background-image" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/yellow-bg-email.png" alt=""/>
+            <div class="overly">
+                <h3 class="pre-title">היי,</h3>
+                <h3 class="title"></h3>
+                <h4 class="sub-title">נשמח לקבל את מספר הטלפון שלך לצורך אימות חד פעמי ב - SMS</h4>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-wrapper">
+        <div class="bottom">
+            <span class="input-label">המספר שלך:</span>
+            <div class="input-wrapper">
+                <input type="number" class="input js-phone-input"/>
+                <span class="err-msg hide">מספר טלפון לא תקין</span>
+            </div>
+
+            
+<div class="cb-container">
+    <div class="cb-wrapper">
+        <span class="cb-text js-cb-text">אישור תוכן שיווקי במייל/מסרון/פוש</span>
+        <img class="cb-img js-cb-responsive js-newsletter-cb"
+             src=""
+             src-empty=""
+             src-checked=""
+             alt=""/>
+    </div>
+    <div class="cb-wrapper">
+        <a href="javascript:close_top_menu();" class="legal-agrement-show modalShowFunction" data-modal="popup-terms">
+            <span class="cb-text js-cb-text policy-link">אני מאשר/ת תנאי שימוש</span>
+        </a>
+        <img class="cb-img js-cb-responsive js-policy-cb"
+             src=""
+             src-empty=""
+             src-checked=""
+             alt=""/>
+        <div class="err-msg js-policy-error-text hide">יש לאשר את תנאי השימוש</div>
+    </div>
+</div>
+
+            <img class="desktop-img" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/mc-ice-cream.png" alt=""/>
+
+            <button class="submit-btn js-submit-btn">המשך</button>
+        </div>
+    </div>
+</div>
+
+                <div class="get-email-step js-get-email-step">
+    <div class="top-wrapper">
+        <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+            <div class="close-x-btn"></div>
+        </button>
+        <div class="top">
+            <img class="background-image" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/yellow-bg-get-email.png" alt=""/>
+            <div class="overly">
+                <h3 class="pre-title">היי,</h3>
+                <h3 class="title">Rotemm</h3>
+                <h4 class="sub-title">נשמח לקבל את המייל לצורך סיום ההרשמה</h4>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-wrapper">
+        <div class="bottom">
+            <span class="input-label">אז מה המייל שלך</span>
+            <div class="input-wrapper">
+                <input type="text" class="input js-email-input" placeholder="aaa@example.com"/>
+                <span class="err-msg">אימייל לא תקין</span>
+            </div>
+
+            
+<div class="cb-container">
+    <div class="cb-wrapper">
+        <span class="cb-text js-cb-text">אישור תוכן שיווקי במייל/מסרון/פוש</span>
+        <img class="cb-img js-cb-responsive js-newsletter-cb"
+             src=""
+             src-empty=""
+             src-checked=""
+             alt=""/>
+    </div>
+    <div class="cb-wrapper">
+        <a href="javascript:close_top_menu();" class="legal-agrement-show modalShowFunction" data-modal="popup-terms">
+            <span class="cb-text js-cb-text policy-link">אני מאשר/ת תנאי שימוש</span>
+        </a>
+        <img class="cb-img js-cb-responsive js-policy-cb"
+             src=""
+             src-empty=""
+             src-checked=""
+             alt=""/>
+        <div class="err-msg js-policy-error-text hide">יש לאשר את תנאי השימוש</div>
+    </div>
+</div>
+
+            <img class="desktop-img" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/mc-fries.png" alt=""/>
+
+            <button class="submit-btn js-submit-btn">המשך</button>
+        </div>
+    </div>
+</div>
+
+                
+<div class="get-phone-email js-get-phone-email">
+    <div class="top-wrapper">
+        <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+            <div class="close-x-btn"></div>
+        </button>
+        <div class="top">
+            <img class="background-image" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/yellow-bg-email.png" alt=""/>
+            <div class="overly">
+                <h3 class="pre-title">היי,</h3>
+                <h3 class="title">Rotemm</h3>
+                <h4 class="sub-title">רק עוד כמה פרטים ואת/ה בפנים</h4>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-wrapper">
+        <div class="bottom">
+            <span class="input-label">בשלב הבא נשלח לך קוד אימות ב-SMS</span>
+            <div class="input-wrapper">
+                <input type="number" class="input js-phone-input" placeholder="" name="phone"/>
+                <span class="err-msg hide">מספר טלפון לא תקין</span>
+            </div>
+
+            <div class="input-wrapper">
+                <input type="text" class="input js-email-input" placeholder="אימייל" name="email"/>
+                <span class="err-msg hide">אימייל לא תקין</span>
+            </div>
+
+            
+<div class="cb-container">
+    <div class="cb-wrapper">
+        <span class="cb-text js-cb-text">אישור תוכן שיווקי במייל/מסרון/פוש</span>
+        <img class="cb-img js-cb-responsive js-newsletter-cb"
+             src=""
+             src-empty=""
+             src-checked=""
+             alt=""/>
+    </div>
+    <div class="cb-wrapper">
+        <a href="javascript:close_top_menu();" class="legal-agrement-show modalShowFunction" data-modal="popup-terms">
+            <span class="cb-text js-cb-text policy-link">אני מאשר/ת תנאי שימוש</span>
+        </a>
+        <img class="cb-img js-cb-responsive js-policy-cb"
+             src=""
+             src-empty=""
+             src-checked=""
+             alt=""/>
+        <div class="err-msg js-policy-error-text hide">יש לאשר את תנאי השימוש</div>
+    </div>
+</div>
+
+            <img class="desktop-img" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/mc-ice-cream.png" alt=""/>
+
+            <button class="submit-btn js-submit-btn">המשך</button>
+        </div>
+    </div>
+</div>
+
+                
+<div class="registration-step js-registration-step">
+    <div class="top-wrapper">
+        <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+            <div class="close-x-btn"></div>
+        </button>
+        <div class="top">
+            <img class="background-image" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/yellow-bg-email.png" alt=""/>
+            <div class="overly">
+                <h3 class="pre-title">היי,</h3>
+                <h3 class="title"></h3>
+                <h4 class="sub-title">רק עוד כמה פרטים ואת/ה בפנים</h4>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-wrapper">
+        <div class="bottom">
+            <span class="input-label">המספר שלך:</span>
+            <div class="input-wrapper">
+                <input type="number" class="input js-phone-input" placeholder="" name="phone"/>
+                <span class="err-msg hide">מספר טלפון לא תקין</span>
+            </div>
+
+            <div class="input-wrapper">
+                <input type="text" class="input js-first-name-input" placeholder="שם פרטי" name="first_name"/>
+                <span class="err-msg hide">שדה חובה</span>
+            </div>
+
+            <div class="input-wrapper">
+                <input type="text" class="input js-last-name-input" placeholder="שם משפחה" name="last_name"/>
+                <span class="err-msg hide">שדה חובה</span>
+            </div>
+
+            
+<div class="cb-container">
+    <div class="cb-wrapper">
+        <span class="cb-text js-cb-text">אישור תוכן שיווקי במייל/מסרון/פוש</span>
+        <img class="cb-img js-cb-responsive js-newsletter-cb"
+             src=""
+             src-empty=""
+             src-checked=""
+             alt=""/>
+    </div>
+    <div class="cb-wrapper">
+        <a href="javascript:close_top_menu();" class="legal-agrement-show modalShowFunction" data-modal="popup-terms">
+            <span class="cb-text js-cb-text policy-link">אני מאשר/ת תנאי שימוש</span>
+        </a>
+        <img class="cb-img js-cb-responsive js-policy-cb"
+             src=""
+             src-empty=""
+             src-checked=""
+             alt=""/>
+        <div class="err-msg js-policy-error-text hide">יש לאשר את תנאי השימוש</div>
+    </div>
+</div>
+
+            <img class="desktop-img" src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/mc-ice-cream.png" alt=""/>
+
+            <button class="submit-btn js-submit-btn">המשך</button>
+        </div>
+    </div>
+</div>
+
+                
+<!--<link rel="stylesheet" href="--><!--/_media/css/website/popups/new-login-popup.css">-->
+<div class="registration-success js-registration-success-step" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="top-wrapper">
+        <div class="top">
+            <img src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/yellow-bg-success.svg" alt=""/>
+            <div class="overly">
+                <div class="js-complete-first-line"></div>
+                <div class="js-complete-second-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-wrapper">
+        <div class="bottom">
+            <img src="https://newcdnmedia.mcdonalds.co.il/_media/images/login_flow/success-meal.png" alt=""/>
+            <button class="js-continue-btn continue-btn">המשך</button>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="same_login_type_popup hide">
+        <div class="content">
+            <img class="x-close" src="https://newcdnmedia.mcdonalds.co.il/_media/images/general/x.svg" alt=""/>
+            <img class="logo" src="https://newcdnmedia.mcdonalds.co.il/_media/media/50/4714.png?t=1587627284" alt=""/>
+
+            <div class="msg"></div>
+            <div class="existing-account-overwrite-warning">התחברות עם חשבון חדש תוביל לאיבוד ההטבות והמק קויינס שנצברו עבורך בחשבון הקיים - במידה ויש כאלה.</div>
+            <div class="btn-container">
+                <button class="js-continue-btn">המשך בחשבון החדש</button>
+                <button class="js-alternative-btn continue-yellow">התחברות בחשבון קיים</button>
+            </div>
+        </div>
+    </div>
+</aside><aside class="widget"> 
+		<div class="modal login-modal fade popup-reset-password popup-restore-password-email"  tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		       <div class="modal-header login-head-block">
+				   <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal"  aria-hidden="true">
+					   <div class="close-x-btn"></div>
+				   </button>
+			        <h4 class="tite-login-modal">שינוי סיסמה</h4>
+			    </div>
+			    <div class="modal-body">
+			        <form class="forms-login-modal"  name="restore_password" data-type="email">
+			        	<div class="restore-text">
+							<h4 class="restore-title">שכחת את הסיסמה? לא נורא!</h4>
+							<span>אנחנו נשלח אליך קישור עם הוראות איפוס</span>
+						</div>
+						<input type="text" name="email" placeholder='דוא"ל'>
+						<button class="but-boxorder">שלח לדוא"ל</button>
+					</form>
+			    </div>
+		  	</div>
+		</div>
+	</div>
+</aside><aside class="widget"> 
+		<div class="modal login-modal fade popup-reset-password popup-restore-password-phone"  tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		       <div class="modal-header login-head-block">
+				   <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal"  aria-hidden="true">
+					   <div class="close-x-btn"></div>
+				   </button>
+			        <h4 class="tite-login-modal">שינוי סיסמה</h4>
+			    </div>
+			    <div class="modal-body">
+			        <form class="forms-login-modal"  name="restore_password" data-type="phone">
+			        	<div class="restore-text">
+							<h4 class="restore-title">שכחת את הסיסמה? לא נורא!</h4>
+							<span>אנחנו נשלח אליך קישור עם הוראות איפוס</span>
+						</div>
+						<input type="number" name="phone" placeholder='מספר נייד'  maxlength = "10" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+						<button class="but-boxorder">שלח sms</button>
+					</form>
+			    </div>
+		  	</div>
+		</div>
+	</div>
+</aside><aside class="widget"> 
+		<div class="modal login-modal fade popup-reset-password popup-restore-password-options"  tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		       <div class="modal-header login-head-block">
+				   <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal"  aria-hidden="true">
+					   <div class="close-x-btn"></div>
+				   </button>
+			        <h4 class="tite-login-modal">איפוס סיסמה</h4>
+			    </div>
+			    <div class="modal-body">
+			        <form class="forms-login-modal">
+			        	<div class="restore-text">
+							<h4 class="restore-title">שכחת את הסיסמה? לא נורא!</h4>
+							<span>הודעה לאיפוס סיסמה תשלח אליך</span>
+						</div>
+						<div class="btns-wrapper">
+							<div class="btn-wrapper">
+								<button class="restore-by-sms">שלח קישור לנייד שלי</button>
+								<span class="arrow"></span>
+							</div>
+
+							<div class="btn-wrapper">
+								<button class="restore-by-mail">שלח לדוא"ל</button>
+								<span class="arrow short"></span>
+							</div>
+						</div>
+					</form>
+			    </div>
+		  	</div>
+		</div>
+	</div>
+</aside><aside class="widget">
+    <div class="modal login-modal fade popup-reset-password popup-security-reset-password" tabindex="-1" role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header login-head-block">
+                    <button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+                        <div class="close-x-btn"></div>
+                    </button>
+                    <h4 class="tite-login-modal">תוקף הסיסמה פג</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="forms-login-modal" name="security_reset_password">
+                        <div class="restore-text">
+                            <span>לצורך שיפור אבטחת המידע עליך לבצע החלפת סיסמא</span>
+                        </div>
+                        <input type="text" name="email" placeholder='דוא"ל' readonly="readonly" value="">
+                        <button class="but-boxorder">שלח קישור בדוא"ל</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside><div class="modal fade popup-serve-to-table" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog serve-to-table">
+		<div class="modal-content">
+			<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+				<div class="close-x-btn"></div>
+			</button>
+			<div class="image-serve-to-table-logo">
+				<img class="mcdonalds-logo"
+				     src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/mcdonalds_logo.png"
+				     alt="">
+			</div>
+			<div class="title-wrapper">
+				<h4 class="title-serve-to-table-modal">ההזמנה הועברה להכנה במסעדה!
+בא לנו להגיש לך אל השולחן</h4>
+			</div>
+			<div class="image-serve-to-table-popup">
+				<img class="image-serve-to-table"
+				     src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/serving_to_table_img.png"
+				     alt="">
+			</div>
+			<div class="buttons-wrapper">
+				<button class="serve-to-table-btns yellow choose-table general-approval-button grey-hover-efect focus-efect">כן, בכיף!</button>
+				<button class="serve-to-table-btns close-popup general-approval-button grey-hover-efect focus-efect">לא, תודה</button>
+			</div>
+		</div>
+	</div>
+</div><aside class="widget">
+	<div class="modal add-car-popup fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header login-head-block">
+					<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+						<div class="close-x-btn"></div>
+					</button>
+					<h4 class="tite-login-modal">הרכב איתו אגיע:</h4>
+				</div>
+				<div class="main-content-wrapper">
+					<div class="car-title-wrapper">
+						<label>
+							<input type="hidden" class="car-input car-id"/>
+						</label>
+						<label>
+							<input class="car-input car-title"
+							       placeholder="סוג הרכב (דגם)" type="text"/>
+						</label>
+						<span class="car-title-error hidden">נא למלא את דגם הרכב</span>
+					</div>
+					<div class="car-details-wrapper">
+						<div class="input-wrapper-with-error-r">
+							<label>
+								<input class="car-input car-number"
+								       placeholder="מספר רכב" type="text"/>
+							</label>
+							<span class="car-number-error hidden">נא למלא מספר רכב תקין</span>
+						</div>
+						<div class="input-wrapper-with-error-l">
+							<label>
+								<input class="car-input car-color"
+								       placeholder="צבע" type="text"/>
+							</label>
+							<span class="car-color-error hidden">נא למלא צבע רכב</span>
+						</div>
+					</div>
+					<div class="save-car-wrapper">
+						<div class="save-car-sub-wrapper-r">
+							<label class="switch">
+								<input type="checkbox" class="save-car-btn" checked>
+								<span class="slider round"></span>
+							</label>
+						</div>
+
+						<div class="save-car-sub-wrapper-l">
+							<span class="save-car-text">שמור פרטים להזמנות הבאות</span>
+						</div>
+
+					</div>
+					<div class="car-image-wrapper">
+						<img class="car-image" src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/add-car/add-car-popup-img.png" alt="">
+					</div>
+					<div class="add-car-btn-wrapper">
+						<button class="save-car-and-continue-btn">המשך</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside><aside class="widget">
+	<div class="modal delivery-pickup-channel-popup fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header login-head-block">
+					<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+						<div class="close-x-btn"></div>
+					</button>
+					<h4 class="tite-login-modal">בחירת שיטת משלוח</h4>
+				</div>
+				<div class="main-content-wrapper">
+					
+						<div class="delivery-pickup-channel-btn-wrapper " data-channel-id="4">
+							<div class="delivery-pickup-channel-img-wrapper">
+								<img class="delivery-pickup-channel-img delivery-pickup-4" src="https://newcdnmedia.mcdonalds.co.il/_media/media/53/4729.png?t=1473028561" alt="">
+							</div>
+							<div class="delivery-pickup-channel-content-wrapper">
+								<span class="delivery-pickup-channel-btn-title">משלוחים</span>
+								<span class="delivery-pickup-channel-btn-sub-title">מינימום הזמנה כולל דמי משלוח (לא כולל טיפ): 90 ₪. אזור חלוקה מוגבל</span>
+							</div>
+						</div>
+
+					
+						<div class="delivery-pickup-channel-btn-wrapper " data-channel-id="16">
+							<div class="delivery-pickup-channel-img-wrapper">
+								<img class="delivery-pickup-channel-img delivery-pickup-16" src="https://newcdnmedia.mcdonalds.co.il/_media/media/53/12299.png?t=1623576825" alt="">
+							</div>
+							<div class="delivery-pickup-channel-content-wrapper">
+								<span class="delivery-pickup-channel-btn-title">חדש!!! משלוח עתידי</span>
+								<span class="delivery-pickup-channel-btn-sub-title">מזמינים עכשיו ומקבלים בשעה שנוחה לכם!</span>
+							</div>
+						</div>
+
+									</div>
+			</div>
+		</div>
+	</div>
+</aside><div class="modal fade popup-random" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog random-popup">
+		<div class="modal-content">
+			<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+				<div class="close-x-btn"></div>
+			</button>
+			<div class="image-random-popup-logo">
+				<img class="mcdonalds-logo"
+				     src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/logomac.svg"
+				     alt="">
+			</div>
+			<div class="title-wrapper">
+				<h4 class="title-random-popup"></h4>
+			</div>
+			<div class="content-wrapper">
+				<span class="content-random-popup"></span>
+			</div>
+			<div class="image-random-popup-wrapper">
+				<img class="image-random-popup"
+				     src=""
+				     alt="">
+			</div>
+			<div class="button-wrapper">
+				<button class="random-popup-btn general-approval-button grey-hover-efect focus-efect"></button>
+			</div>
+		</div>
+	</div>
+</div><div class="modal fade popup-pay-with-meal-card" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog serve-to-table">
+		<div class="modal-content">
+			<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+				<div class="close-x-btn"></div>
+			</button>
+			<div class="image-serve-to-table-logo">
+				<img class="mcdonalds-logo"
+				     src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/mcdonalds_logo.png"
+				     alt="">
+			</div>
+			<div class="title-wrapper">
+				<h4 class="title-pay-with-meal-card-modal"></h4>
+			</div>
+			<div class="image-serve-to-table-popup">
+				<span class="content-pay-with-meal-card-modal"></span>
+			</div>
+			<div class="buttons-wrapper">
+				<button class="pay-with-meal-card-btns yellow pay-with-card general-approval-button grey-hover-efect focus-efect"></button>
+				<button class="pay-with-meal-card-btns close-popup general-approval-button grey-hover-efect focus-efect"></button>
+			</div>
+		</div>
+	</div>
+</div><div class="modal fade popup-continue-payment" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog serve-to-table">
+		<div class="modal-content">
+			<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+				<div class="close-x-btn"></div>
+			</button>
+			<div class="image-serve-to-table-logo">
+				<img class="mcdonalds-logo"
+				     src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/mcdonalds_logo.png"
+				     alt="">
+			</div>
+			<div class="title-wrapper">
+				<h4 class="title"></h4>
+			</div>
+			<div class="image-serve-to-table-popup">
+				<span class="top-content"></span>
+			</div>
+			<div class="image-serve-to-table-popup">
+				<span class="bottom-content"></span>
+			</div>
+			<div class="buttons-wrapper">
+				<button class="continue-payment close-popup grey-hover-efect focus-efect"></button>
+			</div>
+		</div>
+	</div>
+</div>
+<aside class="widget">
+	<div class="modal modal-all-design fade size-popup-next approve-balance-popup" tabindex="-1" role="dialog" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content text-center">
+				<div class="modal-header">
+					<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+						<div class="close-x-btn"></div>
+					</button>
+					<figure class="notice-logo">
+						<img src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/logo-size-popup-next.png" class="logo-size-popup-next" alt="">
+					</figure>
+					<h3 class="general-notice-text" style="max-width: 350px"></h3>
+					<a class="general-approval-button but-boxorder-yellow focus-efect" onclick="disable_all_links(1);">אישור</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>
+
+
+<div class="modal general-notice modal-all-design popup-kosher-store-alert fade" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal" aria-hidden="true">
+					<div class="close-x-btn"></div>
+				</button>
+				<figure class="notice-logo">
+					<img src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/logo-size-popup-next.png"
+					     alt="">
+				</figure>
+				<h3 class="general-notice-text">הודעה כללית</h3>
+				<button class="general-notice-button grey-hover-efect choseOne"></button>
+				<button class="general-notice-button grey-hover-efect choseTwo"></button>
+			</div>
+		</div>
+	</div>
+</div><aside class="widget">
+    <div class="modal terms-modal modal-all-design fade popup-terms allPageModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header login-head-block">
+                    <button type="button" class="svg_close_btn_wrapper hidden-xs" data-dismiss="modal" aria-hidden="true">
+                        <div class="close-x-btn"></div>
+                    </button>
+                    <h4 class="tite-login-modal">תנאי שימוש</h4>
+                </div>
+                <div class="modal-body clearfix">
+                    <div class="box-order-site meals-list order-summary payment-content content-page terms-of-use">
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 content-blocks twoo-line-content">
+                            <div class="content-text scroll-wrap-vertical custom-scroll-vertycal scroll-customisation-filling">
+                                <div>
+	<div>
+		<span style="font-size:16px;"><strong>תנאי שימוש – שירות הזמנות מקדונלד'ס</strong></span></div>
+	<div>
+		 </div>
+	<div>
+		<strong>1. השימוש בשירות</strong></div>
+	<div>
+		 </div>
+	<div>
+		השימוש באתר (<a href="https://order.mcdonalds.co.il/">order.mcdonalds.co.il</a>) ובאפליקציה מקדונלד'ס ישראל / McDonald's Israel ("האפליקציה"), לרבות התכנים והשירותים המוצעים בהם וכל חלק מאלה (אשר יחד עם האפליקציה יוגדרו להלן כ"השירות"), כפוף לתנאי שימוש אלה ("תנאי השימוש" ו/או "הסכם זה"). על-ידי גלישה, הורדה, שימוש ו/או רישום בשירות ו/או כל פעולה אחרת בשירות, הנך ("אתה") מתחייב כי קראת וקיבלת על עצמך את תנאי השימוש וכי הם מהווים הסכם מחייב בינך לבין אלוניאל בע"מ ("החברה" ו/או "הרשת"). במידה שאינך מסכים עם תנאי מתנאי השימוש, עליך לחדול באופן מיידי מלעשות כל שימוש בשירות.</div>
+	<div>
+		 </div>
+	<div>
+		תנאי השימוש של השירות עשויים להשתנות מעת לעת ולפי שיקול דעתה הבלעדי של החברה וללא הודעה מראש. במקרה של שינויים מהותיים, החברה תודיע לך על כך באימייל או על-ידי פרסום הודעה בשירות. פרסים, פרסומים ומבצעים כפופים לתנאי המבצע או הפרסום הרלוונטיים, כפי שהם מופיעים בדפי השירות.</div>
+	<div>
+		 </div>
+	<div>
+		תנאי השימוש מנוסחים בלשון זכר, אך פונים לגברים ונשים כאחד.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>2. רישיון</strong></div>
+	<div>
+		 </div>
+	<div>
+		כפוף לתנאי השימוש, החברה תעניק לך רישיון מוגבל בזמן, הניתן לביטול (בשיקול דעתה הבלעדי של החברה), לא בלעדי, בלתי ניתן להעברה, ללא זכות מתן רישיונות משנה, לעשות שימוש אישי ולא מסחרי בשירות.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>3. הגבלות ואיסורים</strong></div>
+	<div>
+		 </div>
+	<div>
+		הנך מצהיר ומתחייב כי הנך לפחות בן 18 וכי תעשה בשירות אך ורק שימוש אישי שאינו מסחרי וזאת בכפוף לתנאי השימוש. תשלום וביצוע הזמנות דרך השירות מותרים אך ורק מגיל 18. הנך מתחייב שלא: (א) למכור, להעניק רישיון (או רישיון משנה), להשכיר, להמחות, להעביר, לשעבד ו/או לחלוק עם צד ג' כל חלק בזכויותיך תחת תנאי השימוש; (ב) להעביר, להפיץ, להעתיק, להעמיד לרשות הציבור ו/או לשדר את השירות ו/או כל חלק ממנו; (ג) להפנות לשירות על-ידי שימוש במסגור (Framing); (ד) לעשות שימוש בשירות ו/או להפיץ כל חלק ממנו באזורי שיפוט בהם פעולה זו ו/או כל חלק מהשירות מהווים עבירה על החוק, או בהם פעולה זו תכפיף את החברה ו/או מי מהגורמים הקשורים אליה לחובת רישום בתחום סמכות השיפוט או מדינה כאמור; (ה) לעשות, לעודד, לקדם, להנחות ו/או לסייע לאחר לעשות בשירות כל שימוש שאינו חוקי, פוגעני ו/או מזיק; (ו)לבקר בשירות ו/או בכל חלק ממנו באופן בלתי מורשה, ו/או לעשות שימוש בשירות תוך שימוש בשיטות ו/או אמצעים שאינם מורשים, כולל בין היתר רובוטים, "זחלים", "עכבישים" ו/או כל אמצעי אוטומטי אחר; (ז) לשנות, לתרגם, להנדס לאחור (אלא אם הדין החל אוסר באופן מפורש הצבת הגבלה כאמור), לעשות כל ניסיון לגלות את קוד המקור של כל חלק בשירות ו/או כל תוכנה הקשורה אליו ו/או ליצור יצירות נגזרות שלו; (ח) לעשות כל שימוש בשירות באופן העלול לגלות ו/או להפיץ את קוד המקור של השירות ו/או כל חלק ממנו ו/או העלול להכפיף את החברה לחובה לגלות ו/או להפיץ את קוד המקור של השירות ו/או של כל חלק ממנו ו/או שימוש שעלול להעניק לצד ג' את הזכות לשנות או ליצור יצירות נגזרות מהשירות ו/או קוד המקור; (ט) להתחזות לאחר, לעשות שימוש באמצעי תשלום של צד ג' ו/או שלא על-פי דין ו/או לפתוח חשבון בשירות שלא בעבורך או לשימושך האישי בלבד; (י) להעלות ו/או לשלוח דרך השירות תכנים פוגעניים ו/או מזיקים, כולל מבלי לגרוע קבצים שעלולים להעמיס או להשבית את השירות, וירוסים, טרוג'אנים, ספאם, רוגלה או כל קוד או קובץ מזיק אחר; (כ) לעשות שימוש בתגיות מטא (Meta Tags), מטא דטה (Meta Data) או טקסט חבוי אחר ו/או בקישורים או תוצאות חיפוש ממומנות של מנוע חיפוש כלשהו, אשר עושים שימוש במילות מפתח כלשהן המכילות, דומות או זהות לסימני המסחר (כהגדרתם להלן בסעיף 4).</div>
+	<div>
+		 </div>
+	<div>
+		<strong>4. קניין רוחני</strong></div>
+	<div>
+		 </div>
+	<div>
+		כל זכויות הקניין הרוחני בשירות ובתוכן שלך (ראה הגדרה להלן בסעיף 7), כוללים בין היתר ומבלי לגרוע בשירות, תוכנות, פלטפורמות, אלגוריתמים, טכנולוגיה, עיצוב, מדגמים, סימני מסחר, מידע, שירותים, טקסט, קבצים, קטעי וידאו, תמונות, סאונד ומוזיקה, זרימת המשתמש וכל תוכן קנייני אחר ו/או שיפורים או יצירות נגזרות של אלה, הם קניינה של החברה ו/או של מרשיה, להם כל הזכויות בחומרים אלה, כולל כל זכויות הקניין הרוחני הקשורים עמם ("קניין החברה"). משמעות המונח "זכויות קניין רוחני" הוא, בין אם הן רשומות או לא, בכל העולם: (א) זכויות יוצרים, לרבות ומבלי לגרוע זכויות ביצירות כתובות, מצולמות ומוקלטות; (ב) סימני מסחר (לרבות סימני מסחר ולוגואים של משפחת מקדונלד'ס, קבוצת מקדונלד'ס, חברות קשורות וגורמים שלישיים), סימני שירות, שמות מתחם, לוגואים, שמות מסחריים, מוניטין ("סימני המסחר"); (ג) פטנטים, בקשות פטנט והמצאות; (ד) סודות מסחר; (ה) זכויות המקבילות לאלה המוזכרות לעיל וכל זכות קניינית אחרת הקשורה בקניין לא מוחשי; (ו) פיצולים, המשכים, הארכות, חידושים ורישום מחדש של כל זכות מהזכויות המוזכרות לעיל, בין אם קיימים היום או שיוגשו, יירשמו ו/או יתקבלו בעתיד.</div>
+	<div>
+		 </div>
+	<div>
+		הנך מסכים ומודע לכך כי לחברה הזכות המלאה, בכל זמן בו תחפוץ ומכל סיבה שהיא או ללא סיבה כלל, לעצב מחדש, לשנות את הסדר, המבנה והמפרט, המאפיינים וכל רכיב ו/או אספקט אחר של השירות או כל חלק ממנו.</div>
+	<div>
+		 </div>
+	<div>
+		אין בתנאי שימוש אלה ו/או בדבר כלשהו הרשום בשירות כדי להוות העברה ו/או מתן זכויות כלשהן בנוגע לזכויות קניין רוחני בחלק כלשהו בשירות כולל קניין החברה, פרט לרישיון המוגבל שבסעיף 2 לעיל.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>5. החשבון שלך</strong></div>
+	<div>
+		 </div>
+	<div>
+		במהלך יצירת חשבונך בשירות, תידרש לבחור בסיסמה ושם משתמש, שיאפשרו לך להיכנס לחשבונך ו/או לגשת לחשבונך בשירות משירותי צד ג' כגון רשת חברתית (לדוגמא התחברות דרך פייסבוק). הנך האחראי הבלעדי לכל פעולה בחשבונך, לשימוש בסיסמה ובשם המשתמש שלך (כולל שימוש בלתי מורשה), לשמירת הסודיות של סיסמתך ולקיום הוראות צד ג'. אם יש לך סיבה כלשהי לחשוד כי צד ג' גילה את סיסמתך או שהתרחשה גישה לא מורשית לחשבונך בשירות, הנך נדרש להודיע על כך לחברה באופן מיידי ולשנות את סיסמתך.</div>
+	<div>
+		 </div>
+	<div>
+		כדי לשמור על השימוש באפליקציה, ניתן לבקש שבכל פתיחה של האפליקציה תתבקש להזין סיסמא. ניתן לבצע הגדרה זו דרך "הגדרות אבטחה" מהאזור האישי.</div>
+	<div>
+		 </div>
+	<div>
+		כדי להגביל את הגישה לכרטיסי התשלום בהם נעשה שימוש באפליקציה, ניתן לבקש שבכל תשלום בכרטיסים תתבקש להזין סיסמא. ניתן לבצע הגדרה זו דרך "הגדרות אבטחה" מהאזור האישי.</div>
+	<div>
+		 </div>
+	<div>
+		הגדרות אלו מגיעות במצב כבוי וניתן להפעילן לפי בחירתך.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>6. הזמנות</strong></div>
+	<div>
+		 </div>
+	<div>
+		כפוף לתנאי השימוש, תוכל לעיין בתפריט ארוחות וברשימת שירותים ומוצרים, ואף לבצע הזמנות באמצעות השירות. בעת ההזמנה וכפוף לזמינות השירות, תוכל להזמין משלוח לכתובת שתספק לחברה ולשלם באשראי או PayPal או בכל אמצעי תשלום שהחברה תאשר לשלם בו. לחלופין תוכל להזמין ולשלם דרך האפליקציה ולאסוף בעצמך את ההזמנה באחת ממסעדות הרשת . במידה שתבחר לשלם במסעדה, תתבקש לעמוד בתור הרגיל, כדי להזדהות ולשלם על ההזמנה. החברה עשויה, כפוף לשיקול דעתה הבלעדי, לעשות שימוש במסגרת השירות באמצעי זיהוי שמטרתם לאמת את ההזמנה, כגון אישור ב-SMS או אימייל. ללא אימות כאמור ככל שיידרש, לא יתאפשר מתן השירות.</div>
+	<div>
+		 </div>
+	<div>
+		כל המחירים הם בשקלים חדשים וכוללים מע"מ, אך אינם כוללים את התשלום עבור המשלוח, אשר יצוין בנפרד במהלך הזמנת משלוח. כל המחירים, כולל המשלוח, עשויים להשתנות מעת לעת, כפוף לשיקול דעתה הבלעדי של החברה. המחיר שיחול על ההזמנה יהיה המחיר שהוצג לך בעת ביצוע ההזמנה. המלאי והזמינות של השירותים והמוצרים המוצעים בשירות מוגבלים, וייתכן כי בעת קבלת ההזמנה לא ניתן יהיה לספק את המוצר או השירות שהוזמנו. החברה שומרת לעצמה את הזכות לשנות ו/או להסיר את רשימת המוצרים והשירותים המוצעים בשירות, כפוף לשיקול דעתה הבלעדי, ואין בתנאי השירות אלה ו/או בשירות כדי לחייב את החברה להציע או לספק שירותים ו/או מוצרים כלשהם. תמונות המוצרים בשירות נועדו להמחשה בלבד. ייתכנו הבדלים בין התמונות המוצגות בשירות לבין המוצרים המסופקים בפועל, לרבות אך לא רק, הפרשי גוונים בין תצלומי המוצרים בשירות לבין המוצרים כפי שיסופקו בפועל.</div>
+	<div>
+		 </div>
+	<div>
+		המשלוחים בשירות מוגבלים לפי אזורי החלוקה של החברה ו/או של חברות השליחות מטעמה. ייתכן שלא יסופקו משלוחים ו/או יתקבלו הזמנות מאזורים מסוימים. החברה תוכל להקטין או לבטל אזורי חלוקה בגלל תנאי מזג אוויר, חוסר שליחים או כל סיבה שתקשה עליה לבצע משלוח לכתובת המבוקשת.</div>
+	<div>
+		 </div>
+	<div>
+		התשלום עבור ההזמנה יבוצע לאחר בקשתך שנכין לך את ההזמנה, או במקרה של תשלום במזומן בקופה. במשלוחים התשלום יבוצע עם סיום ההזמנה בשירות. התשלום מבוצע ישירות לחשבון החברה דרך הסולקים השונים.</div>
+	<div>
+		 </div>
+	<div>
+		אם הפרטים, לרבות ומבלי לגרוע הכתובת למשלוח שסיפקת אינם נכונים (במלואם או חלקם) או חלקיים ו/או לא תהיה זמין בכתובת זו במועד המשלוח ועקב כך יתעכב ו/או ייכשל המשלוח, החברה תהיה רשאית לחייב אותך בהזמנה ובעלות המשלוח.</div>
+	<div>
+		 </div>
+	<div>
+		תהיה רשאי לבטל הזמנה לאיסוף עצמי בתנאי שטרם אישרת את הכנת המוצרים. לא ניתן לבצע ביטול של הזמנת משלוח.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>7. התוכן שלך</strong></div>
+	<div>
+		 </div>
+	<div>
+		הנך האחראי הבלעדי לכל תוכן שתשלח לחברה, לרבות טקסטים, קטעי וידאו, תמונות, מידע, רעיונות, עיצובים וכל תוכן אחר ("התוכן שלך"). לחברה לא תהיה כל אחריות לתוכן שלך. בשליחת התוכן שלך לחברה אתה ממחה ומעביר לחברה באופן בלתי הדיר את כל זכויותיך בתוכן שלך, כולל כל שיפור ויצירה נגזרת שלו וזכויות הקניין הרוחני של כל אלה. הנך מצהיר ומתחייב כי: (א) הנך בעל מלוא הזכויות להתקשר בתנאי השימוש, לעמוד באיסורים וההתחייבויות הכלולים בהם ולבצע הזמנות בשירות. במידה ששימושך בשירות נעשה עבור ארגון/חברה, הנך מצהיר ומתחייב כי שימושך והסכמתך לתנאי השימוש מחייבים את אותו ארגון/חברה; (ב) אין מניעה, חוקית או אחרת להתקשרותך בתנאי השימוש; (ג) שימושך בשירות ייעשה באופן חוקי ובהתאם להוראות כל דין; (ד) התוכן שלך: (1) אינו מפר כל דין ו/או זכות של צד ג', כולל מבלי לגרוע זכויות קניין רוחני והזכות לפרטיות; (2) יש לך את מלוא הזכויות וההיתרים הנדרשים כדי להעביר לחברה את מלוא הבעלות בתוכן שלך, ללא מגבלות או חובות כלשהן מצד החברה (כולל חובות תשלום). החברה רשאית לפרסם את התוכן שלך בצירוף שם הפרופיל שלך בפייסבוק, שמך בחשבון גוגל ו/או שם חשבון הדואר האלקטרוני שלך.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>8. תוכן של גורמים שלישיים</strong></div>
+	<div>
+		 </div>
+	<div>
+		חלק מהתוכן והחומרים הזמינים בשירות עשויים להיות מסופקים מטעם צדדים שלישיים. כל הדעות, העצות, ההצהרות, השירותים, ההצעות, המידע והתוכן המוצגים בשירות מטעם ו/או שמקורם בצדדים שלישיים, כולל בין היתר טקסטים, תמונות, ציורים וקטעי וידאו, שייכים למי שיצר ו/או פרסם אותם ואינם בהכרח מייצגים את עמדות החברה. החברה אינה מקדמת ו/או מפרסמת ו/או ממליצה עליהם בדרך כלשהי; ואינה עורכת ו/או מבקרת ו/או מסננת ו/או בודקת אותם אלא רק משמשת כפלטפורמה להצגתם וריכוזם במקום אחד.</div>
+	<div>
+		 </div>
+	<div>
+		ככל שהשירות מכיל לינקים לשירותים ומשאבים חיצוניים, החברה אינה שולטת בזמינותם ותכנם של שירותים ומשאבים אלה. במידה שיש לך שאלה, השגה ו/או בעיה בכל עניין הנוגע לשירות ו/או תוכן כאמור, או כל לינק המפנה אליהם, עליך להפנותם לאותו צד ג' שמספק אותם. לינקים כאמור עומדים לרשותך בשירות רק לנוחותך ואין החברה אחראית ללינקים ו/או תוכן כאמור. במידה שתעזוב את השירות על-ידי הקשה על לינק ו/או תצרוך ו/או תצפה ו/או תעשה שימוש כלשהו בתוכן שלא מטעם החברה, דע כי הנך עושה זאת באחריותך בלבד. התוכן אליו אתה נחשף באמצעות לינקים לא פותח, נערך ו/או נבדק על-ידי החברה, והחברה לא תהיה אחראית לכל נזק או אבדן שנגרמו מסיבה כלשהי הקשורה בשירותים, מידע ו/או כל תוכן המסופק בידי אתרים אחרים, כולל בין היתר כתוצאה מעיכובים, פגמים ו/או השמטות העשויות להיות בו. החברה אינה מציגה מצגים ו/או נותנת הבטחות ו/או המלצות, ולא תהיה לה כל אחריות לתוכן כלשהו המסופק על-ידי צד ג'.  אנו ממליצים כי כאשר אתה מופנה לאתרים ולתכנים של צד ג' בלינק, תהיה זהיר ותקרא לעומק ותציית לתנאי השימוש ומדיניות הפרטיות של אתרים ותכנים כאמור, ותוודא כי האתר מתאים לגילך ולאופי השימוש שלך ברשת האינטרנט.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>9. פרטיות</strong></div>
+	<div>
+		 </div>
+	<div>
+		מדיניות הפרטיות של החברה זמינה לעיונך בכתובת http://www.mcdonalds.co.il/app/privacy-policy </div>
+	<div>
+		ומהווה חלק בלתי נפרד מהסכם זה. לתשומת לבך כי כמפורט במדיניות הפרטיות, אנו עשויים לאסוף נתוני מיקום/GPS במסגרת השירות ולחבר את מכשירך באופן אוטומטי לרשת ה-WiFi שבמסעדות וסניפי הרשת ללא הודעה מוקדמת.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>10. הגבלת אחריות</strong></div>
+	<div>
+		 </div>
+	<div>
+		שירות זה מועמד לרשותך כפי שהוא ("AS IS") וללא אחריות ו/או הבטחה מכל סוג, בין אם מפורשת או מכללא ו/או מכוח דין (ככל שהדין החל מרשה זאת). ככל שמתיר זאת החוק ובהיקף המרבי אותו הוא מתיר, החברה אינה נותנת כל הבטחה ולא תישא באחריות, כולל בין היתר ומבלי לגרוע בנוגע לסחירות (Merchantability), הפרת זכויות והתאמה למטרה מסוימת (Fitness for Particular Purpose). החברה אינה מבטיחה שהשירות יהיה נגיש ללא הפרעה או נטול פגמים ותקלות, או שהשירות או השרת עליו מצוי השירות נקיים מוירוסים ו/או כל גורם מזיק אחר. החברה אינה מבטיחה ו/או נותנת מצג כלשהו בנוגע לשימוש בשירות ו/או תוצאותיו של שימוש זה, לרבות אספקה וזמני אספקה ובכל הקשור לדיוק, אמיתות התוכן, מהימנות ו/או בכל עניין אחר. אתה האחראי הבלעדי לנקיטת כל אמצעי הזהירות הדרושים ו/או המומלצים לדעתך להגן על-עצמך מפני תביעות, נזקים, אבדן ו/או סכנה העלולים לעלות כתוצאה ו/או בקשר עם שימושך ו/או הסתמכותך על השירות ו/או כל חלק ממנו. הנך מוותר בזאת על כל תביעה או טענה בקשר עם השירות, אספקתו ו/או אי אספקתו.</div>
+	<div>
+		 </div>
+	<div>
+		ככל שמתיר זאת החוק ובהיקף המרבי אותו הוא מתיר, בשום מקרה החברה והגורמים הקשורים אליה כולל שותפים, נושאי משרה, דירקטורים, עובדים, בעלי מניות, סוכנים, נותני רישיון, קבלני משנה וספקים, לא יישאו באחריות כלפיך ו/או כלפי כל ישות אחרת תחת כל תיאוריה משפטית, בין אם בעילה חוזית, נזיקית או אחרת, בין אם בשל נזק ישיר, עקיף, משני ו/או נסיבתי כולל ומבלי לגרוע אבדן רווחים, אבדן הזדמנויות עסקיות, אבדן הכנסה ו/או רווח, חסרון כיס, פגיעה במוניטין, אבדן מידע, פיצויים מיוחדים, עונשים ו/או לדוגמא; הנובעים מ ו/או קשורים בכל דרך בשירות ו/או בהיעדר שירות, לרבות ומבלי לגרוע שימושך בו ו/או הסתמכותך עליו ו/או על כל חלק ממנו ו/או בכל תקלה, חוסר דיוק, השמטה, פגם, פרצת אבטחה ו/או כל כשל בביצוע ואספקת השירות על-ידי החברה, אף אם החברה ידעה על האפשרות שיגרמו נזקים כאמור. ככל שלמרות האמור לעיל תמצא החברה אחראית, התרופה הבלעדית לה תהיה זכאי היא ביצוע מתוקן של ההזמנה בשירות, והחברה לא תהיה אחראית למתן תרופות נוספות מעבר לכך.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>11. שיפוי</strong></div>
+	<div>
+		 </div>
+	<div>
+		הנך מתחייב להגן על ולשפות את החברה ומי מטעמה, כולל ומבלי לגרוע את כל בעליה, מנהליה, בעלי המשרה, הגורמים הקשורים אליה ועובדיה נגד כל אבדן, הוצאה, עלויות, תביעות, פיצויים (כולל הוצאות סבירות בשל שכר טרחת עו"ד, תעריפי מומחים וכל הוצאה סבירה אחרת הקשורה בהתדיינות משפטית), הנובעים מ ו/או שבאופן כלשהו קשורים עם שימושך בשירות ו/או הפרה של תנאי השימוש על-ידך.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>12. ביטול</strong></div>
+	<div>
+		 </div>
+	<div>
+		החברה רשאית לבטל הסכם זה ו/או להשהות את זכותך להיכנס ו/או לעשות שימוש בכל חלק ו/או בכל השירות, מכל סיבה וללא הודעה מוקדמת. עם הביטול עליך לחדול מיד לעשות כל שימוש בשירות ולמחוק את האפליקציה ממכשירך. במקרה של ביטול, התנאים לחובתך בסעיפים הבאים ימשיכו להיות בתוקף 3-13.</div>
+	<div>
+		 </div>
+	<div>
+		<strong>13. כללי</strong></div>
+	<div>
+		 </div>
+	<div>
+		13.1.   התנאים שבתנאי השימוש ובמדיניות הפרטיות הם התנאים היחידים והמלאים שחלים בינך לבין החברה בנוגע לנושא הסכם זה.</div>
+	<div>
+		 </div>
+	<div>
+		13.2.   דיני מדינת ישראל יחולו על תנאי שימוש אלה וכל הקשור ו/או הנובע מהם. לבתי המשפט המוסמכים במחוז תל אביב תהיה סמכות השיפוט הבלעדית בכל תביעה בקשר עם תנאי שימוש אלה, ולאף בית משפט אחר לא תהיה סמכות מקבילה להם. </div>
+	<div>
+		 </div>
+	<div>
+		13.3.   במידה שתנאי מתנאי השימוש יקבע כבלתי אכיף ו/או חסר תוקף על-ידי ערכאה שיפוטית, ייחשב כאילו שונה תנאי זה אך ורק בהיקף הנדרש כדי שיהיה אכיף ובר תוקף. אם בכל מקרה ייחשב התנאי כחסר תוקף ו/או לא אכיף, ייחשב התנאי כאילו נמחק מתנאי השימוש ולא יהפוך את יתר התנאים בתנאי השימוש לחסרי תוקף או ללא אכיפים.</div>
+	<div>
+		 </div>
+	<div>
+		13.4.   שום התנהגות, ויתור, הימנעות מפעולה ו/או שיהוי ו/או עיכוב מצד החברה בהפעלת זכות מזכויותיה על פי הסכם זה ו/או הדין, לא תחשב לוויתור על זכות כלשהי או כהסכמה לאיזו הפרה או אי קיום תנאי הסכם זה או כנותנת דחייה או ארכה או כשינוי, ביטול או תוספת של איזה תנאי שהוא, אלא אם נעשתה בכתב ומפורשות.</div>
+	<div>
+		 </div>
+	<div>
+		13.5.   אין בהסכם זה כדי להקנות זכויות כלשהן למי שאינו צד לו, ואין הסכם זה בגדר חוזה לטובת אדם שלישי כמשמעו בחוק החוזים (חלק כללי), תשל"ג-1973.</div>
+	<div>
+		 </div>
+	<div>
+		13.6.   החברה רשאית להסב הסכם זה, כולו או בחלקו, בכפוף לשיקול דעתה הבלעדי. אינך רשאי להסב ו/או להעביר הסכם זה לצד ג' ללא קבלת אישור החברה מראש ובכתב. כל הסבה בלתי מורשית תחשב כבטלה וחסרת תוקף.</div>
+	<div>
+		 </div>
+	<div>
+		13.7.   מבלי לגרוע מכל זכות ו/או תרופה אחרות על-פי כל דין ו/או תנאי השימוש, החברה שומרת לעצמה את הזכות, כפוף לשיקול דעתה הבלעדי, מכל סיבה שתהא ובכל עת בה תחפוץ בכך, להגביל ו/או לחסום את גישתך לשירות ו/או למנוע ממך את האפשרות לעשות בו שימוש ו/או בכל חלק ממנו, כולל בין היתר בשל סיבה ו/או תקלה טכנית ו/או הפרה של תנאי השימוש.</div>
+	<div>
+		 </div>
+	<div>
+		13.8.   לשאלות בנוגע לתנאי השירות, אנא צור עמנו קשר במייל: info@mcdonalds.co.il.</div>
+</div>
+<p>
+	 </p>                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button data-dismiss="modal" aria-hidden="true" id="disapprove-terms" class="general-approval-button grey-hover-efect">ביטול</button>
+                <button data-dismiss="modal" aria-hidden="true" id="approval-terms" class="general-approval-button grey-hover-efect js-confirm-terms">אישור</button>
+            </div>
+        </div>
+    </div>
+</aside><aside class="widget">
+    <div class="modal terms-modal popup-free-text-warning modal-all-design fade allPageModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+<!--                <div class="modal-header login-head-block">-->
+                    <button type="button" class="svg_close_btn_wrapper hidden-xs" data-dismiss="modal" aria-hidden="true">
+                        <div class="close-x-btn"></div>
+                    </button>
+<!--                </div>-->
+                <div class="modal-body clearfix">
+                    <figure class="notice-logo">
+                        <img src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/newLogo_desktop.svg" alt="">
+                    </figure>
+                    <div class="content-text">
+
+                    </div>
+                </div>
+                <button data-dismiss="modal" aria-hidden="true" class="general-approval-button grey-hover-efect">ביטול</button>
+                <button data-dismiss="modal" aria-hidden="true" class="general-approval-button grey-hover-efect js-confirm-free_input">אישור</button>
+            </div>
+        </div>
+    </div>
+</aside>
+	<footer class="footer hidden-xs">
+		<nav class="nav-wrap container">
+			<ul class="nav-link-footer list-unstyled list-inline footer-menu-lincks hidden-lg">
+				<li><a href="/">ראשי</a></li>
+				<li><a href="/%D7%AA%D7%A4%D7%A8%D7%99%D7%98_%D7%91%D7%97%D7%99%D7%A8%D7%AA_%D7%90%D7%A8%D7%95%D7%97%D7%94"
+				       class="head-separate">תפריט</a></li>
+				<li><a href="/%D7%9E%D7%A1%D7%A2%D7%93%D7%95%D7%AA"
+				       class="head-separate footer-separate">מסעדות</a></li>
+			</ul>
+
+			<ul class="nav-link list-unstyled list-inline footer-large-menu hidden-xs">
+
+									<li class="jsResizeDetach
+					">
+						<a  href="/%D7%94%D7%97%D7%93%D7%A9%D7%99%D7%9D_%D7%A9%D7%9C%D7%A0%D7%95">
+							החדשים שלנו						</a>
+					</li>
+									<li class="jsResizeDetach
+					">
+						<a  href="/%D7%90%D7%95%D7%93%D7%95%D7%AA">
+							אודות						</a>
+					</li>
+									<li class="jsResizeDetach
+					">
+						<a  href="/%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA_%D7%A4%D7%A8%D7%98%D7%99%D7%95%D7%AA">
+							מדיניות פרטיות						</a>
+					</li>
+									<li class="jsResizeDetach
+					">
+						<a  href="/%D7%AA%D7%A0%D7%90%D7%99_%D7%A9%D7%99%D7%9E%D7%95%D7%A9">
+							תנאי שימוש						</a>
+					</li>
+									<li class="jsResizeDetach
+					">
+						<a target="_blank" href="https://api.whatsapp.com/send?phone=972545738031">
+							צרו קשר בוואטסאפ						</a>
+					</li>
+									<li class="jsResizeDetach
+					">
+						<a  href="/%D7%9E%D7%A7%D7%93%D7%95%D7%A0%D7%9C%D7%93%D7%A1_%D7%99%D7%A9%D7%A8%D7%90%D7%9C">
+							מקדונלד'ס ישראל						</a>
+					</li>
+									<li class="jsResizeDetach
+					">
+						<a  href="/%D7%93%D7%A8%D7%95%D7%A9%D7%99%D7%9D_%D7%9B%D7%95%D7%9B%D7%91%D7%99%D7%9D">
+							דרושים כוכבים						</a>
+					</li>
+									<li class="jsResizeDetach
+					">
+						<a  href="/%D7%9E%D7%99%D7%93%D7%A2_%D7%A2%D7%9C_McCoins">
+							מידע על McCoins						</a>
+					</li>
+									<li class="jsResizeDetach
+					">
+						<a  href="/%D7%9E%D7%97%D7%A9%D7%91%D7%95%D7%9F_%D7%AA%D7%96%D7%95%D7%A0%D7%94">
+							מחשבון תזונה						</a>
+					</li>
+									<li class="jsResizeDetach
+					">
+						<a  href="/%D7%94%D7%A6%D7%94%D7%A8%D7%AA_%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA">
+							הצהרת נגישות						</a>
+					</li>
+								<!--Benji: removed hidden-sm hidden-md -->
+				<li class="jsResizeDetach">
+					<a href="/%D7%A9%D7%90%D7%9C%D7%95%D7%AA_%D7%A0%D7%A4%D7%95%D7%A6%D7%95%D7%AA">
+						שאלות ותשובות					</a>
+				</li>
+				<li class="jsResizeDetach">
+					<a href="http://www.McDonalds.co.il" target="_blank" rel="noreferrer noopener">
+						<span class="other-site">McDonald’s.co.il</span>
+					</a>
+				</li>
+				<li class="jsResizeDetach">
+					<a href="http://www.ytbwa.co.il/" target="_blank" rel="noreferrer noopener"><img alt="/"
+								src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/logo_footer.png"
+								style="width: 64px;"> Design by </a>
+				</li>
+				<li class="jsResizeDetach">
+					<a href="http://www.inmanage.co.il" target="_blank" rel="noreferrer noopener">
+						Site by <span style="color:#696a6c">in</span><span
+								style="color:#ef8521">Manage</span>
+					</a>
+				</li>
+				<li class="jsResizeDetach js-accesibility-btn accessibility_wrapper">
+					<span class="accessibility_icon"></span>
+					<!--				<img src="/_media/images/general/nagisot_icon_desktop.png" class="accessibility_icon" />-->
+					<span class="">אתר נגיש</span>
+					<!--				<span class="visible-desktop">נגישות</span>-->
+				</li>
+			</ul>
+			
+				<div class="block-link-shake link-width-count ">
+					<div class="cart-shake transition-container-arrow">
+
+						<!-- <img src="_media/images/website/general/footer.png" alt="footer-img" class="img-responsive shopping-cart"> -->
+						<!-- <img src="_media/images/website/general/footer-tablet.png" alt="footer-img" class="img-responsive shopping-cart hidden-lg"> -->
+						<span class="shopping-cart"></span>
+
+						<span class="count-foot count-foot-full">0</span>
+						<span class="footer-arrow transition-custom-arrow"></span>
+
+					</div>
+				</div>
+						</nav>
+		<div class="plate-container">
+	<div class="plate-frame clearfix">
+		<div class="plate-sider" style="width:78.5%">
+			<div class="center central-empty-block empty">
+				<div class="empty-plate slick-slide slick-current slick-active" data-slick-index="1"
+				     aria-hidden="false">
+					<img class="bottom-plate-image" alt="bottom-plate-image"
+					     src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/bottom-plate/empty-bottom-plate.png">
+					<h1 class="bottom-my-plate">המגש שלך ריק... מה בא לך להזמין?</h1>
+				</div>
+				
+			</div>
+		</div>
+		<div id="plate-mcmoney-info" style="display:none">
+			<h3> McCoins</h3>
+			<span id="mcmoney-translate-coin-info"> מס' McCoins שאקבל לאחר תשלום </span>
+			<span id="mcmoney-total-user-balance" class="cart-mcmoney-accumulation-amount"><span
+						id="mcmoney-total-to-get-amount"> 0 </span><img
+                             src="https://newcdnmedia.mcdonalds.co.il/_media/images/mcmoney/mcoins-icon.svg" id="mcmoney-total-user-balance-coin"
+                             alt="mcmoney-coin"></span>
+		</div>
+		<div class="plate-buts-info">
+			<div class="top-info-plate">
+				<h5 style="visibility: hidden;" class="shipping-tax">₪ :דמי משלוח<span
+							class="deliveryTotalPrice"></span></h5>
+
+				<h3 class="total-summ" style="padding-bottom:15px">סה"כ					₪<span class="totalCartFloat"> 0.00</span></h3>
+				<div id="my-plate-mcmoney-payment">
+
+									</div>
+			</div>
+			<div class="plate-toolbar clearfix">
+				<div class="frame-tolbar">
+					<a style="cursor: pointer;" onclick="openPopup('popup-new-login');"><span
+								class="toolbar-foter-text"><i
+									class="icon-right-myplate-but "></i>קופונים</span>
+					</a>					<button onclick="go_to_url('/%D7%AA%D7%A4%D7%A8%D7%99%D7%98_%D7%91%D7%97%D7%99%D7%A8%D7%AA_%D7%90%D7%A8%D7%95%D7%97%D7%94')"
+					        class="footer-buttons white-foot-but"><i
+								class="icon-left-myplate-but"></i>הוספת מוצר					</button>
+				</div>
+				<div class="frame-tolbar">
+					<a href="/%D7%94%D7%94%D7%98%D7%91%D7%95%D7%AA_%D7%A9%D7%9C%D7%99" onclick="loader(1)">
+						<span class="toolbar-foter-text">הטבות													</span>
+					</a>
+											<button onclick="go_to_cart('%D7%94%D7%9E%D7%92%D7%A9_%D7%A9%D7%9C%D7%99')" class="footer-buttons"><i
+									class="order-summary-linck"></i>סיכום הזמנה ותשלום</button>
+									</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+	</footer>
+
+
+	<!-- Accessibility - mcdonalds.co.il -->
+
+	<script>
+		window.interdeal = {
+			sitekey   : "ef635a301b9080c238c0bf06e3e5443a",
+			Position  : "Right",
+			Menulang  : "HE",
+			domains	 : {
+				js  : "https://js.nagich.co.il/",
+				acc : "https://access.nagich.co.il/"
+			},
+			isPartial : true,
+			btnStyle  : {
+				color : {
+					main   : "#122231",
+					second : "#fff"
+				},
+				vPosition : ["80%",undefined], //Y-axis position of the widget, left side is reffering to the desktop version, the right side is for mobile.
+				scale	  : ["0.5","0.5"], //Size of the widget, the left side is referring to the desktop version, the right side is for mobile.
+				icon	  : {
+					type	: 6, //You can choose between 1- 14 icons, or set value as string like "Accessibility".
+					shape	: "circle", //You can choose the following shapes: "circle", "rectangle", "rounded", "semicircle".
+					outline	: true //true / false.
+				}
+			}
+		};
+		(function(doc, head, body){
+			var coreCall             = doc.createElement('script');
+			coreCall.src             = 'https://js.nagich.co.il/core/4.1.1/accessibility.js';
+			coreCall.defer           = true;
+			coreCall.integrity       = 'sha512-Sa9czHEwHavqXKmdJEaYdtc0YzuvwZmRRZoovLeWq8Lp5R4ZB1LLCSBoQm6ivUfuncFOM+/9oR08+WCAcBH61Q==';
+			coreCall.crossOrigin     = 'anonymous';
+			coreCall.setAttribute('data-cfasync', true );
+			body? body.appendChild(coreCall) : head.appendChild(coreCall);
+		})(document, document.head, document.body);
+	</script>
+
+		<div class="modal general-notice modal-all-design popup-alerts fade"  tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		       <div class="modal-header">
+			    	<button type="button" class="svg_close_btn_wrapper" data-dismiss="modal"  aria-hidden="true">
+						<div class="close-x-btn"></div>
+			    	</button>
+			    	<figure class="notice-logo">
+			    		<img src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/logo-size-popup-next.png" alt="">
+			    	</figure>
+			    	<h3 class="general-notice-text">הודעה כללית</h3>
+			    	<button class="general-notice-button grey-hover-efect choseOne"></button>
+			    	<button class="general-notice-button grey-hover-efect choseTwo"></button>
+		    	</div>
+		    </div>
+		  </div>
+		</div>
+
+
+		<div class="modal general-notice general-notice-alert modal-all-design fade"  tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="svg_close_btn_wrapper cross-close" data-dismiss="modal"  aria-hidden="true">
+							<div class="close-x-btn"></div>
+						</button>
+						<figure class="notice-logo">
+							<img src="https://newcdnmedia.mcdonalds.co.il/_media/images/website/general/logo-size-popup-next.png" alt="">
+						</figure>
+						<h3 class="general-notice-text fixTextMargins"></h3>
+						<button  data-dismiss="modal" class="general-approval-button grey-hover-efect">אישור</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+    <link rel="stylesheet" property type="text/css" href="https://newcdnmedia.mcdonalds.co.il/_media/css/website/plugins/slick.css"/>
+    <script type="text/javascript"
+            src="https://newcdnmedia.mcdonalds.co.il/_media/js/website/plugins/slick.min.js"></script>
+    	<script type="text/javascript"
+	        src="https://newcdnmedia.mcdonalds.co.il/_media/js/website/plugins/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	<script
+			async
+			src="//cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"
+			onload="initFingerprintJS()"
+	></script>
+
+	<!--
+	<script type='text/javascript' src='https://newcdnmedia.mcdonalds.co.il/_media/js/website/plugins/validation.js'></script>
+	<script type='text/javascript' src='https://newcdnmedia.mcdonalds.co.il/_media/js/website/main.js'></script>
+	<script type="text/javascript" src="https://newcdnmedia.mcdonalds.co.il/_media/js/website/search.js"></script>
+	<script type='text/javascript' src='https://newcdnmedia.mcdonalds.co.il/_media/js/main.js'></script>
+	<script type='text/javascript' src='https://newcdnmedia.mcdonalds.co.il/_media/js/website/my-favorite.js'></script>
+	<script type="text/javascript" src="https://newcdnmedia.mcdonalds.co.il/_media/js/website/bottom-plate.js"></script>
+	-->
+
+    <script type="text/javascript"
+            src="https://newcdnmedia.mcdonalds.co.il/_static/js/home.static.js?v=104bca"></script>
+    	<script type="text/javascript">
+        var use_mcmoney = 0;
+        var url_for_redirect = 'https://order.mcdonalds.co.il';
+        if (sessionStorage.getItem('use_mccoins')){
+            use_mcmoney = sessionStorage.getItem('use_mccoins');
+        }
+
+        function sadasd() {
+            var lenthbox = $('.item-box-plate').length - 2;
+            $('.center').slick('slickGoTo', lenthbox);
+        }
+
+        $(function () {
+            // Cart.build_cart();
+			
+            //Random popup
+            $(function (){
+                if (typeof random_popupArr !== 'undefined' && Object.keys(random_popupArr).length !== 0){
+                    var Popup = new RandomPopup(random_popupArr);
+                    Popup.show();
+                }
+            });
+        });
+
+	</script>
+</body>
+</html>
